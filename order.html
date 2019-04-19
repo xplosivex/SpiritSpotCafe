@@ -32,31 +32,46 @@
       <fieldset class="pure-group">
         <label for="Name">Name: </label>
         <input id="Name" name="Name" placeholder="What your Mom calls you" />
-      </fieldset>
+     </fieldset>
 
-      <fieldset class="pure-group">
+<fieldset class="pure-group">
+        <label for="Type">Message: </label>
+       <select name="Type"  >
+ <option  id="Type" value="Hot Vanilla">Hot Vanilla</option>
+  <option  id="Type" value="Hot Caramel">Hot Caramel</option>
+  <option  id="Type"  value="Iced Vanilla">Iced Vanilla </option>
+  <option  id="Type" value="Iced Caramel">Iced Caramel</option>
+  <option  id="Type" value="Smoothie">Smoothie</option>
+  <option  id="Type"  value="Hot Chocolate">Hot Chocolate</option>
+</select>
+      </fieldset>
+      
+   <fieldset class="pure-group">
         <label for="Toppings">Message: </label>
-       <select name="Toppings"  size="4" multiple>
-  <option id="Toppings"  value="Vanilla">Vanilla</option>
-  <option id="Toppings"  value="Caramel">Caramel</option>
+       <select name="Toppings"  size="3" multiple>
+ <option  id="Toppings" value="Caramel">Chocolate</option>
   <option  id="Toppings" value="Chocolate">Chocolate</option>
   <option  id="Toppings"  value="Whipped Cream">Whipped Cream</option>
 </select>
+    
+      </fieldset
+     <fieldset class="pure-group">
+        <label for="Extra">Message: </label>
+       <select name="Extra"  size="3" multiple>
+ <option  id="Extra" value="Gum">Gum</option>
+  <option  id="Extra" value="Body Armor">Body Armor</option>
+  <option  id="Extra"  value="Mentos">Mentos</option>
+</select>
       </fieldset>
-
-      <fieldset class="pure-group">
-        <label for="email"><em>Your</em> Email Address:</label>
-        <input id="email" name="email" type="email" value=""
+     
+   <fieldset class="pure-group">
+        <label for="Email"><em>Your</em> Email Address:</label>
+        <input id="Email" name="email" type="Email" value=""
         required placeholder="your.name@email.com"/>
         <span class="email-invalid" style="display:none">
           Must be a valid email address</span>
       </fieldset>
-
-      <fieldset class="pure-group">
-        <label for="color">Favourite Color: </label>
-        <input id="color" name="color" placeholder="green" />
-      </fieldset>
-
+     
       <button class="button-success pure-button button-xlarge">
         <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
     </div>
