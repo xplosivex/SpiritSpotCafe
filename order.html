@@ -49,6 +49,7 @@
    <fieldset class="pure-group">
         <label for="Toppings">Message: </label>
        <select name="Toppings"  size="3" multiple>
+        <option  id="Toppings"  value="None">None</option>
  <option  id="Toppings" value="Caramel">Chocolate</option>
   <option  id="Toppings" value="Chocolate">Chocolate</option>
   <option  id="Toppings"  value="Whipped Cream">Whipped Cream</option>
@@ -58,15 +59,16 @@
      <fieldset class="pure-group">
         <label for="Extra">Message: </label>
        <select name="Extra"  size="3" multiple>
- <option  id="Extra" value="Gum">Gum</option>
+ <option  id="Extra" value="None">None</option>
   <option  id="Extra" value="Body Armor">Body Armor</option>
   <option  id="Extra"  value="Mentos">Mentos</option>
+     <option  id="Extra"  value="Gum">Gum</option>
 </select>
       </fieldset>
      
    <fieldset class="pure-group">
         <label for="Email"><em>Your</em> Email Address:</label>
-        <input id="Email" name="email" type="Email" value=""
+        <input id="Email" name="Email" type="Email" value=""
         required placeholder="your.name@email.com"/>
         <span class="email-invalid" style="display:none">
           Must be a valid email address</span>
