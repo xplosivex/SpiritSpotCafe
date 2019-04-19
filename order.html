@@ -30,38 +30,31 @@
         <label for="Name">Name:
         <input id="Name"  class="pure-input-rounded" name="Name" placeholder="What your Mom calls you" />  </label>
      </fieldset>
-
-<fieldset class="pure-group">
-        <label for="Type">Type Of Drink</label>
-         <input type="checkbox" id="Type" name="Type">
-  <label for="Type">Hot Vanilla</label>
-        <label for="Type">Hot Vanilla</label>
-        <label for="Type">Hot Caramel</label>
-        <label for="Type">Iced Vanilla</label>
-        <label for="Type">Iced Caramel</label>
-        <label for="Type">Smoothie</label>
-        <label for="Type">Hot Chocolate</label>
+ <fieldset class="pure-group">
+ <select name="Type" size="4" multiple>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select> 
+         </fieldset>
+   <fieldset class="pure-group">
+    <label for="Toppings">Type Of Drink</label>
+        <input type="checkbox" name="Toppings">Chocolate</input>
+        <input type="checkbox"  name="Toppings">Caramel</input>
+        <input  type="checkbox" name="Toppings">Whipped Cream</input>
+      
  
       </fieldset>
-      
-   <fieldset class="pure-group">
-        <label for="Toppings">Toppings </label>
-       <select name="Toppings"  size="3" type="multiple">
-        <option  id="Toppings" class="pure-input-rounded" value="None">None</option>
- <option  id="Toppings"  class="pure-input-rounded" value="Caramel">Chocolate</option>
-  <option  id="Toppings" class="pure-input-rounded"  value="Chocolate">Chocolate</option>
-  <option  id="Toppings" class="pure-input-rounded" value="Whipped Cream">Whipped Cream</option>
-</select>
     
-      </fieldset
-     <fieldset class="pure-group">
-        <label for="Extra">Extras</label>
-       <select  name="Extra"  size="3" multiple>
- <option  id="Extra" class="pure-input-rounded" value="None">None</option>
-  <option  id="Extra"  class="pure-input-rounded"value="Body Armor">Body Armor</option>
-  <option  id="Extra"   class="pure-input-rounded"value="Mentos">Mentos</option>
-     <option  id="Extra" class="pure-input-rounded"  value="Gum">Gum</option>
-</select>
+   
+    <fieldset class="pure-group">
+    <label for="Extra">Extras</label>
+        <input type="checkbox" name="Toppings">Mentos</input>
+        <input type="checkbox"  name="Toppings">Gum</input>
+        <input  type="checkbox" name="Toppings">Body Armor</input>
+      
+ 
       </fieldset>
      
    <fieldset class="pure-group">
