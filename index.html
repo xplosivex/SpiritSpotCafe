@@ -2,11 +2,29 @@
 <html>
   <head>
     <style>
-ul { margin-left:auto; margin-right:auto; list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #000000; position: fixed; bottom: 0; width:100%;}
-li {display: inline-block; border: grey solid 1px; width: 15%; height: 75px;  }
-      li a {display: block; color: white; text-align: center;  text-decoration: none; padding-top: 5px;}
-  .border {height:60px; padding-left: 10px; padding-right: 10px; border:black solid 3px; border-radius: 20px;}
-  .bordera { color:white; background-color:black; border:black solid 3px; border-radius: 20px;}
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
     </style>
   </head>
   <header>
@@ -14,27 +32,12 @@ li {display: inline-block; border: grey solid 1px; width: 15%; height: 75px;  }
 <img style="float:left; margin: 0; " width="100" height="100" src="http://xplosivex.github.io/SpiritSpotCafe/Images/logo.png"/>
      </header>
   <body style="margin:0;" background="https://xplosivex.github.io/SpiritSpotCafe/Images/Background.jpg">
-<div style="display:inline-block; position: fixed; bottom: 0; width:800px; margin:0; float:left; "> 
-  <table style="background-color:orange; border-radius: 15px; ">
-  <tr>
-  <th>
-  <div class="border" ><a class="bordera" href="#home"><br>Home</a></div>
- </th>
- <th>
-  <div class="border"><a  class="bordera" href="#news"><br>Updates</a></div>
-  </th>
-  <th>
-  <div class="border"><a  class="bordera" href="#contact"><br>Menu</a></div>
-</th> 
-<th>
-<div class="border"><a  class="bordera" href="www.spiritspotcafe.com/order"><br>Order</a></div>
-  </th>
-  <th>
-  <div classs="border"> <a class="bordera" href="#about"><br>Contact</a></div>
-  </th>
-  </tr>
-    </table>
-</div>
+      <ul class="ul">
+  <li><a  class="active" >Home</a></li>
+  <li><a href="www.spiritspotcafe.com/menu.html">Menu</a></li>
+  <li><a href="www.spiritspotcafe.com/order.html" >Order</a></li>
+  <li><a href="www.spiritspotcafe.com/contact.html">Contact</a></li>
+</ul>.
   </body>
   
 </html>
