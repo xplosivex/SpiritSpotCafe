@@ -2,6 +2,33 @@
 <html lang="en">
 <head>
 <style>
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
    .border {height:60px; padding-left: 10px; padding-right: 10px; border:black solid 3px; border-radius: 20px;}
   .bordera { color:white; background-color:black; border:black solid 3px; border-radius: 20px;}
  </style>
@@ -12,7 +39,12 @@
 </head>
 
 <body >
-  
+  <ul class="ul">
+  <li><a  href="www.spiritspotcafe.com/index.html">Home</a></li>
+  <li><a href="www.spiritspotcafe.com/menu.html">Menu</a></li>
+  <li><a class="active" >Order</a></li>
+  <li><a href="www.spiritspotcafe.com/contact.html">Contact</a></li>
+</ul>
   <aside>
      
    </aside>
@@ -84,26 +116,6 @@
   <!-- Submit the Form to Google Using "AJAX" -->
   <script data-cfasync="false" src="xplosive.github.io/SpiritSpotCafe/Scripts/Form.js"></script>
 <!-- END -->
-<div style="display:inline-block; position: fixed; bottom: 0; width:800px; margin:0; float:left; "> 
-  <table style="background-color:orange; border-radius: 15px; ">
-  <tr>
-  <th>
-  <div class="border" ><a class="bordera" href="#home"><br>Home</a></div>
- </th>
- <th>
-  <div class="border"><a  class="bordera" href="#news"><br>Updates</a></div>
-  </th>
-  <th>
-  <div class="border"><a  class="bordera" href="#contact"><br>Menu</a></div>
-</th> 
-<th>
-<div class="border"><a  class="bordera" href="#about"><br>Order</a></div>
-  </th>
-  <th>
-  <div classs="border"> <a class="bordera" href="#about"><br>Contact</a></div>
-  </th>
-  </tr>
-    </table>
-</div>
+
 </body>
 </html>
