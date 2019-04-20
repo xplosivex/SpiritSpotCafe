@@ -1,5 +1,5 @@
 function show(aval) {
-    if (aval == "Hot Chocolate" || aval == "Hot Caramel"  || aval == "Hot Vanilla" || aval == "Iced Caramel" || aval == "Iced Vanilla"  ) {
+    if ( aval == "Hot Caramel"  || aval == "Hot Vanilla" || aval == "Iced Caramel" || aval == "Iced Vanilla"  ) {
     hiddenDiv.style.display='block';
     
     Form.fileURL.focus();
