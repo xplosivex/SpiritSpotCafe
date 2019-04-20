@@ -39,7 +39,8 @@
      </fieldset>
       <label for="Type">Type Of Drink</label>
  <fieldset class="pure-group" style="border:black double 8px; border-radius: 15px; background:url("https://xplosivex.github.io/SpiritSpotCafe/Images/Background.jpg");">
-  <select name="Type">
+  <select name="Type" onchange="java_script_:show(this.options[this.selectedIndex].value)">
+                  
   <option value="None">None</option>
   <option value="Hot Caramel">Hot Caramel</option>
   <option value="Hot Vanilla">Hot Vanilla</option>
@@ -48,8 +49,10 @@
   <option value="Smoothie">Smoothie</option>
   <option value="Hot Chocolate">Hot Chocolate</option>
 </select> 
-         </fieldset>
-     <label for="Toppings">Toppings</label>
+
+              <div id="hiddenDiv" style="display:none">
+              <div style="">
+                  <label for="Toppings">Toppings</label>
    <fieldset style="border:black double 8px; border-radius: 15px;" style="border:grey double 8px; border-radius: 15px; background:url("https://xplosivex.github.io/SpiritSpotCafe/Images/Background.jpg");" >
     
     <ul>
@@ -61,6 +64,10 @@
 </ul>
  
       </fieldset>
+      </div> 
+              </div>
+
+           </fieldset>
     
    <label for="Extra">Extras</label>
     <fieldset style="border:black double 8px; border-radius: 15px; background:url("https://xplosivex.github.io/SpiritSpotCafe/Images/Background.jpg");" >
@@ -94,7 +101,8 @@
   </form>
 
   <!-- Submit the Form to Google Using "AJAX" -->
-  <script data-cfasync="false" src="xplosive.github.io/SpiritSpotCafe/Scripts/Form.js"></script>
+  <script src="https://www.spiritspotcafe.com/Scripts/Option.js"></script>
+  <script data-cfasync="false" src="https://www.spiritspotcafe.com/Scripts/Form.js"></script>
 <!-- END -->
 
 </body>
