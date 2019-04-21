@@ -2,10 +2,9 @@ function change(){
 var here = document.getElementById("Type").value 
  if ( here == "Hot Caramel"  || here == "Hot Vanilla" || here == "Iced Caramel" || here  == "Iced Vanilla"  ) {
     hiddenDiv.style.display='block';
-    
     Form.fileURL.focus();
     } 
-    else{
+    else if ( here == "Smoothie"  || here == "Hot Chocolate" || here == "None"  ) {
     hiddenDiv.style.display='none';
 
 }
