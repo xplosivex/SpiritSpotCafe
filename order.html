@@ -121,7 +121,7 @@ action="https://script.google.com/macros/s/AKfycbw9mN1c_CT51vCimuvCqUCBBbu1Xq9m3
    <fieldset name="IP" class="pure-group" style=" border:black double 8px;  border-radius: 15px; background-color:white;">
      <ul>
      
-     <li id="IP" > <input  type="checkbox" type="IP"  name="IP"  checked></li>
+     <li id="IP" > <input id="IPHere"  type="checkbox" type="IP"  name="IP"  checked></li>
 </ul>
       </fieldset>
       <button  style=" border:black double 8px; border-radius: 15px; padding-left:83%; background-color:white;" class="button-success pure-button button-xlarge">
@@ -145,6 +145,9 @@ action="https://script.google.com/macros/s/AKfycbw9mN1c_CT51vCimuvCqUCBBbu1Xq9m3
   function getIP(json) {
   var ip = json.ip 
   document.getElementById("IP").innerHTML = ip;
+   document.getElementById("IP").value = ip;
+   var x = document.getElementById("IP").textContent;
+   document.getElementById("IPHere").value = x;
   }
 </script>
 <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
