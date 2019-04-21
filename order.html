@@ -118,12 +118,16 @@ action="https://script.google.com/macros/s/AKfycbw9mN1c_CT51vCimuvCqUCBBbu1Xq9m3
       </fieldset>
     
       
-   <fieldset name="IP" class="pure-group" style=" border:black double 8px;  border-radius: 15px; background-color:white;">
+   <fieldset name="IP" class="pure-group" style=" border:black double 8px; display:none;  border-radius: 15px; background-color:white;">
      <ul>
      
-     <li id="IP" > <input id="IPHere"  type="checkbox" type="IP"  name="IP"  checked></li>
+     <li > <input id="IPHere"  type="checkbox"  name="IP"  checked></li>
 </ul>
       </fieldset>
+     <fieldset class="pure-group" style="border:black double 8px; border-radius: 15px; background-color:white;">
+       <label for="IP">Name:</label><br>
+        <input  required id="IP"  class="pure-input-rounded" name="IP"   /> 
+     </fieldset>
       <button  style=" border:black double 8px; border-radius: 15px; padding-left:83%; background-color:white;" class="button-success pure-button button-xlarge">
         <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
     </div>
@@ -144,10 +148,8 @@ action="https://script.google.com/macros/s/AKfycbw9mN1c_CT51vCimuvCqUCBBbu1Xq9m3
  <script type="application/javascript">
   function getIP(json) {
   var ip = json.ip 
-  document.getElementById("IP").innerHTML = ip;
-   document.getElementById("IP").value = ip;
-   var x = document.getElementById("IP").textContent;
-   document.getElementById("IPHere").value = x;
+ document.getElementById("IP").value = ip; 
+
   }
 </script>
 <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
