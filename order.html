@@ -40,7 +40,7 @@ action="https://script.google.com/macros/s/AKfycbw9mN1c_CT51vCimuvCqUCBBbu1Xq9m3
       
  <fieldset class="pure-group" style="border:black double 8px; border-radius: 15px; background-color:white;">
  <label for="Type">Type Of Drink:</label><br>
-  <select name="Type" onchange="java_script_:show(this.options[this.selectedIndex].value)">
+  <select id="Type" ame="Type" onchange="change()">
                   
   <option value="None">None</option>
   <option value="Hot Caramel">Hot Caramel</option>
@@ -68,7 +68,7 @@ action="https://script.google.com/macros/s/AKfycbw9mN1c_CT51vCimuvCqUCBBbu1Xq9m3
       </fieldset>
     <fieldset class="pure-group" style="border:black double 8px; border-radius: 15px; background-color:white;">
  <label >Any Extras or snacks?</label><br>
-  <select name="YesN" onchange="java_script_:show(this.options[this.selectedIndex].value)">
+  <select id="Extra" onchange="change()">
                   
   <option value="No">No</option>
  <option value="Yes">Yes</option>
