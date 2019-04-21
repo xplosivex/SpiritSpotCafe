@@ -9,15 +9,14 @@ var here = document.getElementById("Type").value
     hiddenDiv.style.display='none';
 document.getElementById("Toppings").value = "None";
 }
-}
-function change2(){
-    var here2 = document.getElementById("Extra").value 
+
+    var here2 = document.getElementById("Extra2").value 
  if ( here2 == "Yes") {
     hiddenDiv2.style.display='block';
     
     Form.fileURL.focus();
     } 
-    else if ( here2 == "No") {
+    else {
     hiddenDiv2.style.display='none';
 
 }
