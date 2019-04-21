@@ -10,6 +10,10 @@ var here = document.getElementById("Type").value
 document.getElementById("Toppings").value = "None";
 }
 
+ 
+}
+
+function change2(){
     var here2 = document.getElementById("Extra2").value 
  if ( here2 == "Yes") {
     hiddenDiv2.style.display='block';
@@ -21,4 +25,3 @@ document.getElementById("Toppings").value = "None";
 
 }
 }
-
