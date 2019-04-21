@@ -1,0 +1,6 @@
+.BorderImg { 
+  border: 10px inset transparent;
+  -webkit-border-image: url(https://www.spiritspotcafe.com/Images/border.png) 40 stretch; /* Safari 3.1-5 */
+  -o-border-image: url(https://www.spiritspotcafe.com/Images/border.png) 40 stretch; /* Opera 11-12.1 */
+  border-image: url(https://www.spiritspotcafe.com/Images/border.png) 40 stretch;
+}
