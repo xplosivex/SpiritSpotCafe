@@ -7,7 +7,7 @@ var here = document.getElementById("Type").value
     } 
     else{
     hiddenDiv.style.display='none';
-document.getElementById("Type1").value = "None";
+
 }
 
  
@@ -22,7 +22,7 @@ function change2(){
     } 
     else {
     hiddenDiv2.style.display='none';
-        document.getElementById("Extra3").value = "None";
+       
 
 }
 }
