@@ -66,12 +66,19 @@ action="https://script.google.com/macros/s/AKfycbw9mN1c_CT51vCimuvCqUCBBbu1Xq9m3
 </ul>
  
       </fieldset>
-    
+    <fieldset class="pure-group" style="border:black double 8px; border-radius: 15px; background-color:white;">
+ <label >Any Extras or snacks?</label><br>
+  <select name="YesN" onchange="java_script_:show(this.options[this.selectedIndex].value)">
+                  
+  <option value="No">No</option>
+ <option value="Yes">Yes</option>
+</select> 
+ </fieldset>
 
           
     
    
-    <fieldset style=" border:black double 8px; border-radius: 15px; background-color:white;">
+    <fieldset   id="hiddenDiv2"  style=" border:black double 8px; border-radius: 15px; background-color:white;">
     
 <label for="Extra">Extras</label>
          <ul>
