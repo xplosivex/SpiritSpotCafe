@@ -143,8 +143,8 @@ action="https://script.google.com/macros/s/AKfycbw9mN1c_CT51vCimuvCqUCBBbu1Xq9m3
 </body>
  <script type="application/javascript">
   function getIP(json) {
-   document.getElementById("IP").value = json.ip;
-  document.getElementById("IP").innerHTML = json.ip;
+  var ip = json.ip 
+  document.getElementById("IP").innerHTML = ip;
   }
 </script>
 <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
