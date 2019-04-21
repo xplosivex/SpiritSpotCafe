@@ -10,3 +10,16 @@ function show(aval) {
         
     }
   }
+
+function show(aval) {
+    if ( aval == "Yes" ) {
+    hiddenDiv2.style.display='block';
+    
+    Form.fileURL.focus();
+    } 
+    else{
+    hiddenDiv2.style.display='none';
+     
+        
+    }
+  }
