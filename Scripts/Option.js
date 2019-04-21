@@ -6,5 +6,7 @@ function show(aval) {
     } 
     else{
     hiddenDiv.style.display='none';
+        document.getElementById("Toppings").value = "None";
+        
     }
   }
