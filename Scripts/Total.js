@@ -7,25 +7,22 @@
   } else if  ( here == "Smoothie" ) {
    var AT = 0
    var Topp = document.getElementById("ToppingsJ").value 
+ document.getElementById("Type").value = Topp;
   if ( Topp == "Strawberry" ){
   var AT = 3
-  document.getElementById("ToppingsA").value = "Strawberry Smoothie"
-   document.getElementById("ToppingsA").checked = true;
+
   }
    if ( Topp == "Strawberry Banana" ){
   var AT = 3
-  document.getElementById("ToppingsA").value = "Strawberry Banana Smoothie"
-    document.getElementById("ToppingsA").checked = true;
+ 
   }
     if ( Topp == "Mango" ){
   var AT = 3
-  document.getElementById("ToppingsA").value = "Mango Smoothie"
-     document.getElementById("ToppingsA").checked = true;
+ 
   }
     if ( Topp == "Naked" ){
   var AT = 2
-  document.getElementById("ToppingsA").value = "Naked Smoothie"
-     document.getElementById("ToppingsA").checked = true;
+  
   }
    }   else if  ( here == "None" ) {
    var AT = 0
