@@ -1,4 +1,3 @@
- setInterval(Total,0)
 
    function Total(){
     var here = document.getElementById("Type").value 
