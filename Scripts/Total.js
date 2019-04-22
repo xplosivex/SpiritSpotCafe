@@ -343,11 +343,11 @@ switch(IIQ) {
 
     document.getElementById("ExtraSelect").value = ExtraS.replace(/ 0 /g, '');\
       if (here2N == "Yes") {
-     var TotalDF = AE + BE + CE + DE + EE + FE + GE + HE + IE + JE + KE + LE + ME + NE + OE + PE + QE + RE + SE + TE
+     var TotalK =  AT + AE + BE + CE + DE + EE + FE + GE + HE + IE + JE + KE + LE + ME + NE + OE + PE + QE + RE + SE + TE
      } else if (here2N == "No")
-    var TotalDF = 0
+   var TotalK =  AT 
      }
-     var TotalK =  AT  + TotalDF
+     
     var TotalT =  "Total: " + "$" + TotalK
     if (FFF == "NDD") {
     var TotalG =  "Total: " + "$" + TotalK + " + Special Request"
