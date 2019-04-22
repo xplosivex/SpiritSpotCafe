@@ -63,13 +63,13 @@ switch(AAQ) {
   case "0":
     var AE = 0
     break;
- case "1":
+ case "1 Ice Breaker":
     var AE = 1
     break;
-  case "2":
+  case "2 Ice Breaker":
   var AE = 2
     break;
- case "3":
+ case "3 Ice Breaker":
    var AE = 3
     break;
 } 
@@ -77,13 +77,13 @@ switch(BBQ) {
   case "0":
     var BE = 0
     break;
- case "1":
+ case "1 Body Armor":
     var BE = 2
     break;
-  case "2":
+  case "2 Body Armor":
   var BE = 4
     break;
- case "3":
+ case "3 Body Armor":
    var BE = 6
     break;
 } 
@@ -91,13 +91,13 @@ switch(CCQ) {
   case "0":
     var CE = 0
     break;
- case "1":
+ case "1 Lays":
     var CE = 1
     break;
-  case "2":
+  case "2 Lays":
   var CE = 2
     break;
- case "3":
+ case "3 Lays":
    var CE = 3
     break;
 } 
@@ -105,13 +105,13 @@ switch(DDQ) {
   case "0":
     var DE = 0
     break;
- case "1":
+ case "1 Granola Bar":
     var DE = 0.50
     break;
-  case "2":
+  case "2 Granola Bar":
   var DE = 1
     break;
- case "3":
+ case "3 Granola Bar":
    var DE = 1.50
     break;
 } 
@@ -119,13 +119,13 @@ switch(EEQ) {
   case "0":
     var EE = 0
     break;
- case "1":
+ case "1 Chocolate Milk":
     var EE = 2
     break;
-  case "2":
+  case "2 Chocolate Milk":
   var EE = 4
     break;
- case "3":
+ case "3 Chocolate Milk":
    var EE = 6
     break;
 } 
@@ -133,13 +133,13 @@ switch(EEQ) {
   case "0":
     var FE = 0
     break;
- case "1":
+ case "1 Cheez-Itz":
     var FE = 1
     break;
-  case "2":
+  case "2 Cheez-Itz":
   var FE = 2
     break;
- case "3":
+ case "3 Cheez-Itz":
    var FE = 3
     break;
 }
@@ -147,13 +147,13 @@ switch(EEQ) {
   case "0":
     var GE = 0
     break;
- case "1":
+ case "1 Orange Juice":
     var GE = 1.50
     break;
-  case "2":
+  case "2 Orange Juice":
   var GE = 3.00
     break;
- case "3":
+ case "3 Orange Juice":
    var GE = 4.50
     break;
 }
@@ -161,13 +161,13 @@ switch(EEQ) {
   case "0":
     var HE = 0
     break;
- case "1":
+ case "1 Vitamin Water":
     var HE = 2.50
     break;
-  case "2":
+  case "2 Vitamin Water":
   var HE = 5.00
     break;
- case "3":
+ case "3 Vitamin Water":
    var HE = 7.50
     break;
 }
@@ -175,13 +175,13 @@ switch(IIQ) {
   case "0":
     var IE = 0
     break;
- case "1":
+ case "1 Water Bottle":
     var IE = 1
     break;
-  case "2":
+  case "2 Water Bottle":
   var IE = 2
     break;
- case "3":
+ case "3 Water Bottle":
    var IE = 3
     break;
 }
@@ -189,13 +189,13 @@ switch(IIQ) {
   case "0":
     var JE = 0
     break;
- case "1":
+ case "1 Chex Mix":
     var JE = 1
     break;
-  case "2":
+  case "2 Chex Mix":
   var JE = 2
     break;
- case "3":
+ case "3 Chex Mix":
    var JE = 3
     break;
 }
@@ -203,13 +203,13 @@ switch(IIQ) {
   case "0":
     var KE = 0
     break;
- case "1":
+ case "1 Pretzels":
     var KE = 1
     break;
-  case "2":
+  case "2 Pretzels":
   var KE = 2
     break;
- case "3":
+ case "3 Pretzels":
    var KE = 3
     break;
 }
@@ -217,13 +217,13 @@ switch(IIQ) {
   case "0":
     var LE = 0
     break;
- case "1":
+ case "1 Gold Fish":
     var LE = 1
     break;
-  case "2":
+  case "2 Gold Fish":
   var LE = 2
     break;
- case "3":
+ case "3 Gold Fish":
    var LE = 3
     break;
 }
@@ -231,13 +231,13 @@ switch(IIQ) {
   case "0":
     var ME = 0
     break;
- case "1":
+ case "1 Animal Crackers":
     var ME = 1
     break;
-  case "2":
+  case "2 Animal Crackers":
   var ME = 2
     break;
- case "3":
+ case "3 Animal Crackers":
    var ME = 3
     break;
 }
@@ -245,13 +245,13 @@ switch(IIQ) {
   case "0":
     var NE = 0
     break;
- case "1":
+ case "1 AppleSauce":
     var NE = 1
     break;
-  case "2":
+  case "2 AppleSauce":
   var NE = 2
     break;
- case "3":
+ case "3 AppleSauce":
    var NE = 3
     break;
 }
@@ -259,13 +259,13 @@ switch(IIQ) {
   case "0":
     var OE = 0
     break;
- case "1":
+ case "1 FruitSnacks":
     var OE = 0.50
     break;
-  case "2":
+  case "2 FruitSnacks":
   var OE = 1
     break;
- case "3":
+ case "3 FruitSnacks":
    var OE = 1.50
     break;
 }
@@ -273,13 +273,13 @@ switch(IIQ) {
   case "0":
     var PE = 0
     break;
- case "1":
+ case "1 Go Gurt":
     var PE = 1
     break;
-  case "2":
+  case "2 Go Gurt":
   var PE = 2
     break;
- case "3":
+ case "3 Go Gurt ":
    var PE = 3
     break;
 }
@@ -287,13 +287,13 @@ switch(IIQ) {
   case "0":
     var QE = 0
     break;
- case "1":
+ case "1 Nutri Grain":
     var QE = 1
     break;
-  case "2":
+  case "2 Nutri Grain":
   var QE = 2
     break;
- case "3":
+ case "3 Nutri Grain":
    var QE = 3
     break;
 }
@@ -301,13 +301,13 @@ switch(IIQ) {
   case "0":
     var RE = 0
     break;
- case "1":
+ case "1 Rice Krispeys":
     var RE = 1
     break;
-  case "2":
+  case "2 Rice Krispeys":
   var RE = 2
     break;
- case "3":
+ case "3 Rice Krispeys":
    var RE = 3
     break;
 }
@@ -315,13 +315,13 @@ switch(IIQ) {
   case "0":
     var SE = 0
     break;
- case "1":
+ case "1 Slim Jim":
     var SE = 0.50
     break;
-  case "2":
+  case "2 Slim Jim":
   var SE = 1
     break;
- case "3":
+ case "3 Slim Jim":
    var SE = 1.50
     break;
 }
@@ -329,13 +329,13 @@ switch(IIQ) {
   case "0":
     var TE = 0
     break;
- case "1":
+ case "1 Speical K":
     var TE = 1
     break;
-  case "2":
+  case "2 Speical K":
   var TE = 2
     break;
- case "3":
+ case "3 Speical K":
    var TE = 3
     break;
 }
