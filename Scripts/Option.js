@@ -11,6 +11,9 @@ var here = document.getElementById("Type").value
       document.getElementById("ToppingsC").checked = false; 
      document.getElementById("ToppingsD").checked = false;
       
+    }  else if ( here == "Smoothie" ) {
+     hiddenDiv3.style.display='block';
+    Form.fileURL.focus();
     }
 
  
