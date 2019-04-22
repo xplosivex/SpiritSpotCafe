@@ -38,31 +38,29 @@
    }
   
  
- var A =  document.getElementById("ExtraA").checked 
- var AAQ = document.getElementById("AQ").value
- var B = document.getElementById("ExtraB").checked
- var C = document.getElementById("ExtraC").checked
-var D = document.getElementById("ExtraD").checked
- var E = document.getElementById("ExtraE").checked
-  var F = document.getElementById("ExtraF").checked
- var G = document.getElementById("ExtraG").checked
- var H = document.getElementById("ExtraH").checked
- var I = document.getElementById("ExtraI").checked
- var J = document.getElementById("ExtraJ").checked
- var K = document.getElementById("ExtraK").checked
-var L = document.getElementById("ExtraL").checked 
-var M = document.getElementById("ExtraM").checked 
-var N = document.getElementById("ExtraN").checked
-var O = document.getElementById("ExtraO").checked
-var P = document.getElementById("ExtraP").checked
-var Q = document.getElementById("ExtraQ").checked
-var R = document.getElementById("ExtraR").checked
-var S = document.getElementById("ExtraS").checked
-var T = document.getElementById("ExtraT").checked
 
+ var AAQ = document.getElementById("AQ").value
+var BBQ = document.getElementById("BQ").value
+var CCQ = document.getElementById("CQ").value
+var DDQ = document.getElementById("DQ").value
+var EEQ = document.getElementById("EQ").value
+var FFQ = document.getElementById("FQ").value
+var GGQ = document.getElementById("GQ").value
+var HHQ = document.getElementById("HQ").value
+var IIQ = document.getElementById("IQ").value
+var JJQ = document.getElementById("JQ").value
+var KKQ = document.getElementById("KQ").value
+var LLQ = document.getElementById("LQ").value
+var MMQ = document.getElementById("MQ").value
+var NNQ = document.getElementById("NQ").value
+var OOQ = document.getElementById("OQ").value
+var PPQ = document.getElementById("PQ").value
+var RRQ = document.getElementById("RQ").value
+var SSQ = document.getElementById("SQ").value
+var TTQ = document.getElementById("TQ").value
 switch(AAQ) {
   case "0":
-    var AE = 1
+    var AE = 0
     break;
  case "1":
     var AE = 1
@@ -74,10 +72,62 @@ switch(AAQ) {
    var AE = 3
     break;
 } 
-
-
-
-
+switch(BBQ) {
+  case "0":
+    var BE = 0
+    break;
+ case "1":
+    var BE = 2
+    break;
+  case "2":
+  var BE = 4
+    break;
+ case "3":
+   var BE = 6
+    break;
+} 
+switch(CCQ) {
+  case "0":
+    var CE = 0
+    break;
+ case "1":
+    var CE = 1
+    break;
+  case "2":
+  var CE = 2
+    break;
+ case "3":
+   var CE = 3
+    break;
+} 
+switch(DDQ) {
+  case "0":
+    var DE = 0
+    break;
+ case "1":
+    var DE = 0.50
+    break;
+  case "2":
+  var DE = 1
+    break;
+ case "3":
+   var DE = 1.50
+    break;
+} 
+switch(EEQ) {
+  case "0":
+    var EE = 0
+    break;
+ case "1":
+    var EE = 2
+    break;
+  case "2":
+  var EE = 4
+    break;
+ case "3":
+   var EE = 6
+    break;
+} 
 
      var TotalK =  AT +  AE 
     var TotalT =  "Total: " + "$" + TotalK
