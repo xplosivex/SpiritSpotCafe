@@ -342,9 +342,9 @@ switch(IIQ) {
     var here2N = document.getElementById("Extra2").value 
 
     document.getElementById("ExtraSelect").value = ExtraS.replace(/ 0 /g, '');\
-      if (here2N = "Yes") {
+      if (here2N == "Yes") {
      var TotalDF = AE + BE + CE + DE + EE + FE + GE + HE + IE + JE + KE + LE + ME + NE + OE + PE + QE + RE + SE + TE
-     } else {
+     } else if (here2N == "No")
     var TotalDF = 0
      }
      var TotalK =  AT  + TotalDF
