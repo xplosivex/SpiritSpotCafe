@@ -138,7 +138,7 @@ var TE = 0
      var TotalK =  AT +  AE + BE + CE + DE + EE + FE + GE + HE + IE + JE + KE + LE + ME + NE + OE + PE + QE + RE + SE + TE
     var TotalT =  "Total: " + "$" + TotalK
     if (FFF == "NDD") {
-    var TotalG =  "Total: " + "$" + TotalK + "Special Request"
+    var TotalG =  "Total: " + "$" + TotalK + " + Special Request"
     document.getElementById("TotalL").innerHTML = TotalG; 
      document.getElementById("TotalM").value = TotalG; 
     }else {
