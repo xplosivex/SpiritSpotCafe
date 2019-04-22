@@ -166,7 +166,7 @@ var TE = 0
      document.getElementById("TotalM").value = TotalG; 
     }else {
      document.getElementById("TotalL").innerHTML = TotalT; 
-     document.getElementById("TotalB").innerHTML = TotalG;
+     document.getElementById("TotalB").innerHTML = TotalT;
      document.getElementById("TotalM").value = TotalT; 
     }
 }
