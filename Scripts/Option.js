@@ -6,6 +6,7 @@ var here = document.getElementById("Type").value
     } 
     else if ( here == "Smoothie" || here == "Hot Chocolate" || here == "None"  ){
    hiddenDiv.style.display='none';
+     document.getElementById("Toppings").checked = false; 
     }
 
  
