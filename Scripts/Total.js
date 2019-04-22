@@ -61,10 +61,10 @@ var SSQ = document.getElementById("SQ").value
 var TTQ = document.getElementById("TQ").value
 switch(AAQ) {
   case "0":
-    var AE = 0
+    var AE = 0  
     break;
  case "1 Ice Breaker":
-    var AE = 1
+    var AE = 1 
     break;
   case "2 Ice Breaker":
   var AE = 2
@@ -339,6 +339,7 @@ switch(IIQ) {
    var TE = 3
     break;
 }
+    var ExtraS = AAQ + " " + BBQ + " " + CCQ + " " + DDQ + " " + EEQ + " " + FFQ + " " + GGQ + " " + HHQ + " " + IIQ + " " + JJQ + " " + KKQ + " " + LLQ + " " + MMQ + " " + NNQ + " " OOQ + " " + PPQ + " " + QQQ + " " + RRQ + " " + SSQ + " " + TTQ
      var TotalK =  AT +  AE + BE + CE + DE + EE + FE + GE + HE + IE + JE + KE + LE + ME + NE + OE + PE + QE + RE + SE + TE
     var TotalT =  "Total: " + "$" + TotalK
     if (FFF == "NDD") {
