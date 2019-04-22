@@ -7,6 +7,7 @@
   } else if  ( here == "Smoothie" ) {
    var AT = 0
    var Topp = document.getElementById("ToppingsJ").value 
+   document.getElementById("ToppingsE").value  = Topp 
   if ( Topp == "Strawberry" ){
   var AT = 3
 
