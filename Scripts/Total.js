@@ -65,11 +65,13 @@ if (AAQ == "1") {
 var AE = 2
 }else if (AAQ == "3") {
 var AE = 3
-}
+
 AQ.style.display='block';
 Form.fileURL.focus(); 
 }else{
 var AE = 0
+AQ.style.display='none';
+
 }
 if (B == true) {
 var BE = 2  
