@@ -162,9 +162,11 @@ var TE = 0
     if (FFF == "NDD") {
     var TotalG =  "Total: " + "$" + TotalK + " + Special Request"
     document.getElementById("TotalL").innerHTML = TotalG; 
+     document.getElementById("TotalB").innerHTML = TotalG;
      document.getElementById("TotalM").value = TotalG; 
     }else {
      document.getElementById("TotalL").innerHTML = TotalT; 
+     document.getElementById("TotalB").innerHTML = TotalG;
      document.getElementById("TotalM").value = TotalT; 
     }
 }
