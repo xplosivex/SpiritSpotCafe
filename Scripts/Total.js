@@ -24,7 +24,7 @@
     if ( Topp == "Naked" ){
   var AT = 2
   
-  }
+  
    }   else if  ( here == "None" ) {
    var AT = 0
    document.getElementById("ToppingsE").value  = Topp 
@@ -59,15 +59,17 @@ var R = document.getElementById("ExtraR").checked
 var S = document.getElementById("ExtraS").checked
 var T = document.getElementById("ExtraT").checked
 if (A == true) {
-if (AAQ == "1") {
- var AE = 1 
-} else if (AAQ == "2") {
-var AE = 2
-}else if (AAQ == "3") {
-var AE = 3
-}
 AQ.style.display='block';
 Form.fileURL.focus(); 
+if (AAQ == "1") {
+var AE = 1
+}
+if (AAQ == "2") {
+var AE = 2
+}
+if (AAQ == "3") {
+var AE = 3
+}
 }else{
 var AE = 0
 AQ.style.display='none';
