@@ -62,27 +62,23 @@ var T = document.getElementById("ExtraT").checked
 if (A == true) {
 AQ.style.display='block';
 Form.fileURL.focus(); 
-console.log(AAQ)
+switch(AAQ) {
+ case "1":
+    var AE = 1
+    break;
+  case "2":
+  var AE = 2
+    break;
+ case "3":
+  var AE = 3
+    break;
+} 
 }else{
 var AE = 0
 AQ.style.display='none';
 
 }
-if (A == true && AAQ == "1") {
-var AE = 1
-} else {
- var AE = 0 
-}
-else if (A == true && AAQ == "2") {
-var AE = 2
-} else {
- var AE = 0 
-}
-else if (A == true && AAQ == "3") {
-var AE = 3
-} else {
- var AE = 0 
-}
+
 if (B == true) {
 var BE = 2  
 }else{
