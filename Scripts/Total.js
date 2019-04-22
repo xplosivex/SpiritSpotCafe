@@ -140,8 +140,10 @@ var TE = 0
     if (FFF == "true") {
     var TotalG =  "Total: " + "$" + TotalK + "Special Request"
     document.getElementById("TotalL").innerHTML = TotalG; 
+     document.getElementById("TotalM").value = TotalG; 
     }else {
      document.getElementById("TotalL").innerHTML = TotalT; 
+     document.getElementById("TotalM").value = TotalT; 
     }
 }
 
