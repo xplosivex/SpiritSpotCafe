@@ -1,6 +1,19 @@
  setInterval(Total,0)
 
    function Total(){
+    var here = document.getElementById("Type").value 
+ if ( here == "Hot Caramel"  || here == "Hot Vanilla" || here == "Iced Caramel" || here  == "Iced Vanilla"  ) {
+  var AT = 2
+  } else if  ( here == "Smoothie" ) {
+   var AT = 3
+   }   else if  ( here == "None" ) {
+   var AT = 0
+   } else if  ( here == "Hot Chocolate" ) {
+   var AT = 1
+   } else if  ( here == "Special Request" ) {
+   var FFF = true
+   }
+ 
  var A =  document.getElementById("ExtraA").checked 
  var B = document.getElementById("ExtraB").checked
  var C = document.getElementById("ExtraC").checked
@@ -121,7 +134,7 @@ var TE = 1
 }else{
 var TE = 0
 }
-     var TotalK =   AE + BE + CE + DE + EE + FE + GE + HE + IE + JE + KE + LE + ME + NE + OE + PE + QE + RE + SE + TE
+     var TotalK =  AT +  AE + BE + CE + DE + EE + FE + GE + HE + IE + JE + KE + LE + ME + NE + OE + PE + QE + RE + SE + TE
     var TotalT =  "Total: " + "$" + TotalK
      document.getElementById("TotalL").innerHTML = TotalT; 
 }
