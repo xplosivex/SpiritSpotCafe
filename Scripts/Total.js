@@ -74,12 +74,11 @@ switch(AAQ) {
   var AE = 3
     break;
 } 
-}else{
+else if (A == false) {
 var AE = 0
 AQ.style.display='none';
 
 }
-
 if (B == true) {
 var BE = 2  
 }else{
