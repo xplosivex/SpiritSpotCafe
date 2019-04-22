@@ -55,6 +55,7 @@ var MMQ = document.getElementById("MQ").value
 var NNQ = document.getElementById("NQ").value
 var OOQ = document.getElementById("OQ").value
 var PPQ = document.getElementById("PQ").value
+var QQQ = document.getElementById("QQ").value
 var RRQ = document.getElementById("RQ").value
 var SSQ = document.getElementById("SQ").value
 var TTQ = document.getElementById("TQ").value
@@ -256,16 +257,16 @@ switch(IIQ) {
 }
     switch(OOQ) {
   case "0":
-    var FE = 0
+    var OE = 0
     break;
  case "1":
-    var FE = 0.50
+    var OE = 0.50
     break;
   case "2":
-  var FE = 1
+  var OE = 1
     break;
  case "3":
-   var FE = 1.50
+   var OE = 1.50
     break;
 }
     switch(PPQ) {
@@ -282,7 +283,63 @@ switch(IIQ) {
    var PE = 3
     break;
 }
-     var TotalK =  AT +  AE 
+    switch(QQQ) {
+  case "0":
+    var QE = 0
+    break;
+ case "1":
+    var QE = 1
+    break;
+  case "2":
+  var QE = 2
+    break;
+ case "3":
+   var QE = 3
+    break;
+}
+    switch(RRQ) {
+  case "0":
+    var RE = 0
+    break;
+ case "1":
+    var RE = 1
+    break;
+  case "2":
+  var RE = 2
+    break;
+ case "3":
+   var RE = 3
+    break;
+}
+    switch(SSQ) {
+  case "0":
+    var SE = 0
+    break;
+ case "1":
+    var SE = 0.50
+    break;
+  case "2":
+  var SE = 1
+    break;
+ case "3":
+   var SE = 1.50
+    break;
+}
+    switch(TTQ) {
+  case "0":
+    var TE = 0
+    break;
+ case "1":
+    var TE = 1
+    break;
+  case "2":
+  var TE = 2
+    break;
+ case "3":
+   var TE = 3
+    break;
+}
+     var TotalK =  AT +  AE + BE + CE + DE + EE + FE + GE + HE + IE + JE + KE + LE + ME + NE + OE + PE + QE + RE + SE + TE
     var TotalT =  "Total: " + "$" + TotalK
     if (FFF == "NDD") {
     var TotalG =  "Total: " + "$" + TotalK + " + Special Request"
