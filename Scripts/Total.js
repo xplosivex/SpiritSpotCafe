@@ -9,7 +9,7 @@
    var AT = 0
    var Topp = document.getElementById("ToppingsJ").value 
    document.getElementById("ToppingsE").value  = Topp 
-  }
+  
   if ( Topp == "Strawberry" ){
   var AT = 3
 
@@ -25,7 +25,7 @@
     if ( Topp == "Naked" ){
   var AT = 2
   
-  
+  }
    }   else if  ( here == "None" ) {
    var AT = 0
    document.getElementById("ToppingsE").value  = Topp 
@@ -39,7 +39,7 @@
   
  
  var A =  document.getElementById("ExtraA").checked 
- 
+ var AAQ = document.getElementById("AQ").value
  var B = document.getElementById("ExtraB").checked
  var C = document.getElementById("ExtraC").checked
 var D = document.getElementById("ExtraD").checked
@@ -60,22 +60,22 @@ var R = document.getElementById("ExtraR").checked
 var S = document.getElementById("ExtraS").checked
 var T = document.getElementById("ExtraT").checked
 if (A == true) {
-var AAQ = document.getElementById("AQ").value
+
 AQ.style.display='block';
 Form.fileURL.focus(); 
 switch(AAQ) {
  case "1":
-    var AE = 1
+     AE = 1
     break;
   case "2":
-  var AE = 2
+   AE = 2
     break;
  case "3":
-  var AE = 3
+   AE = 3
     break;
 } 
 else if (A == false) {
-var AE = 0
+
 AQ.style.display='none';
 
 }
