@@ -58,7 +58,9 @@ var R = document.getElementById("ExtraR").checked
 var S = document.getElementById("ExtraS").checked
 var T = document.getElementById("ExtraT").checked
 if (A == true) {
-var AE = 1   
+var AE = 1 
+AQ.style.display='block';
+Form.fileURL.focus(); 
 }else{
 var AE = 0
 }
