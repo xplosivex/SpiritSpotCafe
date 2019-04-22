@@ -68,14 +68,20 @@ var AE = 0
 AQ.style.display='none';
 
 }
-if (AAQ == "1") {
+if (A == true && AAQ == "1") {
 var AE = 1
+} else {
+ var AE = 0 
 }
-else if (AAQ == "2") {
+else if (A == true && AAQ == "2") {
 var AE = 2
+} else {
+ var AE = 0 
 }
-else if (AAQ == "3") {
+else if (A == true && AAQ == "3") {
 var AE = 3
+} else {
+ var AE = 0 
 }
 if (B == true) {
 var BE = 2  
