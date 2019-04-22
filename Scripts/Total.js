@@ -62,6 +62,12 @@ var T = document.getElementById("ExtraT").checked
 if (A == true) {
 AQ.style.display='block';
 Form.fileURL.focus(); 
+console.log(AAQ)
+}else{
+var AE = 0
+AQ.style.display='none';
+
+}
 if (AAQ == "1") {
 var AE = 1
 }
@@ -70,11 +76,6 @@ var AE = 2
 }
 else if (AAQ == "3") {
 var AE = 3
-}
-}else{
-var AE = 0
-AQ.style.display='none';
-
 }
 if (B == true) {
 var BE = 2  
