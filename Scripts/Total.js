@@ -39,7 +39,7 @@
   
  
  var A =  document.getElementById("ExtraA").checked 
- var AAQ = document.getElementById("AQ").value
+ 
  var B = document.getElementById("ExtraB").checked
  var C = document.getElementById("ExtraC").checked
 var D = document.getElementById("ExtraD").checked
@@ -60,6 +60,7 @@ var R = document.getElementById("ExtraR").checked
 var S = document.getElementById("ExtraS").checked
 var T = document.getElementById("ExtraT").checked
 if (A == true) {
+var AAQ = document.getElementById("AQ").value
 AQ.style.display='block';
 Form.fileURL.focus(); 
 switch(AAQ) {
