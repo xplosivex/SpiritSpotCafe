@@ -278,7 +278,7 @@ switch(IIQ) {
   case "2 Go Gurt":
   var PE = 2
     break;
- case "3 Go Gurt ":
+ case "3 Go Gurt":
    var PE = 3
     break;
 }
