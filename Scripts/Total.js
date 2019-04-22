@@ -12,14 +12,14 @@
    var AT = 1
    } else if  ( here == "Special Request" ) {
     var AT = 0
-   var FFF = true
+   var FFF = "NDD"
    }
  
  var A =  document.getElementById("ExtraA").checked 
  var B = document.getElementById("ExtraB").checked
  var C = document.getElementById("ExtraC").checked
-var D = document.getElementById("ExtraC").checked
- var E = document.getElementById("ExtraD").checked
+var D = document.getElementById("ExtraD").checked
+ var E = document.getElementById("ExtraE").checked
   var F = document.getElementById("ExtraF").checked
  var G = document.getElementById("ExtraG").checked
  var H = document.getElementById("ExtraH").checked
@@ -137,7 +137,7 @@ var TE = 0
 }
      var TotalK =  AT +  AE + BE + CE + DE + EE + FE + GE + HE + IE + JE + KE + LE + ME + NE + OE + PE + QE + RE + SE + TE
     var TotalT =  "Total: " + "$" + TotalK
-    if (FFF == "true") {
+    if (FFF == "NDD") {
     var TotalG =  "Total: " + "$" + TotalK + "Special Request"
     document.getElementById("TotalL").innerHTML = TotalG; 
      document.getElementById("TotalM").value = TotalG; 
