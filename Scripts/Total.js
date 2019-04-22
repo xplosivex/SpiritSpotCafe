@@ -5,7 +5,20 @@
  if ( here == "Hot Caramel"  || here == "Hot Vanilla" || here == "Iced Caramel" || here  == "Iced Vanilla"  ) {
   var AT = 2
   } else if  ( here == "Smoothie" ) {
-   var AT = 3
+   var AT = 0
+   var Topp = document.getElementById("Toppings").value 
+  if ( Topp == "Strawberry" ){
+  var AT = 3
+  }
+   if ( Topp == "Strawberry Banana" ){
+  var AT = 3
+  }
+    if ( Topp == "Mango" ){
+  var AT = 3
+  }
+    if ( Topp == "Naked" ){
+  var AT = 2
+  }
    }   else if  ( here == "None" ) {
    var AT = 0
    } else if  ( here == "Hot Chocolate" ) {
@@ -14,6 +27,7 @@
     var AT = 0
    var FFF = "NDD"
    }
+  
  
  var A =  document.getElementById("ExtraA").checked 
  var B = document.getElementById("ExtraB").checked
