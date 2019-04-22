@@ -341,10 +341,15 @@ switch(IIQ) {
     var ExtraS = AAQ + " " + BBQ + " " + CCQ + " " + DDQ + " " + EEQ + " " + FFQ + " " + GGQ + " " + HHQ + " " + IIQ + " " + JJQ + " " + KKQ + " " + LLQ + " " + MMQ + " " + NNQ + " " + OOQ + " " + PPQ + " " + QQQ + " " + RRQ + " " + SSQ + " " + TTQ
    
 
-    document.getElementById("ExtraSelect").value = ExtraS.replace(/ 0 /g, '');\
-    
+    document.getElementById("ExtraSelect").value = ExtraS.replace(/ 0 /g, '');
+     var here2N = document.getElementById("Extra2").value 
+     if (here2N == "Yes") {
      var TotalK =  AT + AE + BE + CE + DE + EE + FE + GE + HE + IE + JE + KE + LE + ME + NE + OE + PE + QE + RE + SE + TE
-    var TotalT =  "Total: " + "$" + TotalK
+     } 
+     if (here2N == "No") {
+     var TotalK = AT
+     }
+     var TotalT =  "Total: " + "$" + TotalK
     if (FFF == "NDD") {
     var TotalG =  "Total: " + "$" + TotalK + " + Special Request"
     document.getElementById("TotalL").innerHTML = TotalG; 
