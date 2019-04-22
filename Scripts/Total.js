@@ -9,15 +9,19 @@
    var Topp = document.getElementById("ToppingsJ").value 
   if ( Topp == "Strawberry" ){
   var AT = 3
+  document.getElementById("Toppings").value = "Strawberry"
   }
    if ( Topp == "Strawberry Banana" ){
   var AT = 3
+  document.getElementById("Toppings").value = "Strawberry Banana"
   }
     if ( Topp == "Mango" ){
   var AT = 3
+  document.getElementById("Toppings").value = "Mango"
   }
     if ( Topp == "Naked" ){
   var AT = 2
+  document.getElementById("Toppings").value = "Naked"
   }
    }   else if  ( here == "None" ) {
    var AT = 0
