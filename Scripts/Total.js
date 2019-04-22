@@ -1,4 +1,4 @@
-
+setInteval(Total,0)
    function Total(){
     var here = document.getElementById("Type").value 
  if ( here == "Hot Caramel"  || here == "Hot Vanilla" || here == "Iced Caramel" || here  == "Iced Vanilla"  ) {
