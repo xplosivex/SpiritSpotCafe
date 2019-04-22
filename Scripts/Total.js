@@ -64,10 +64,10 @@ Form.fileURL.focus();
 if (AAQ == "1") {
 var AE = 1
 }
-if (AAQ == "2") {
+else if (AAQ == "2") {
 var AE = 2
 }
-if (AAQ == "3") {
+else if (AAQ == "3") {
 var AE = 3
 }
 }else{
