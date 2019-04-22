@@ -128,7 +128,160 @@ switch(EEQ) {
    var EE = 6
     break;
 } 
-
+    switch(FFQ) {
+  case "0":
+    var FE = 0
+    break;
+ case "1":
+    var FE = 1
+    break;
+  case "2":
+  var FE = 2
+    break;
+ case "3":
+   var FE = 3
+    break;
+}
+   switch(GGQ) {
+  case "0":
+    var GE = 0
+    break;
+ case "1":
+    var GE = 1.50
+    break;
+  case "2":
+  var GE = 3.00
+    break;
+ case "3":
+   var GE = 4.50
+    break;
+}
+      switch(HHQ) {
+  case "0":
+    var HE = 0
+    break;
+ case "1":
+    var HE = 2.50
+    break;
+  case "2":
+  var HE = 5.00
+    break;
+ case "3":
+   var HE = 7.50
+    break;
+}
+switch(IIQ) {
+  case "0":
+    var IE = 0
+    break;
+ case "1":
+    var IE = 1
+    break;
+  case "2":
+  var IE = 2
+    break;
+ case "3":
+   var IE = 3
+    break;
+}
+    switch(JJQ) {
+  case "0":
+    var JE = 0
+    break;
+ case "1":
+    var JE = 1
+    break;
+  case "2":
+  var JE = 2
+    break;
+ case "3":
+   var JE = 3
+    break;
+}
+    switch(KKQ) {
+  case "0":
+    var KE = 0
+    break;
+ case "1":
+    var KE = 1
+    break;
+  case "2":
+  var KE = 2
+    break;
+ case "3":
+   var KE = 3
+    break;
+}
+    switch(LLQ) {
+  case "0":
+    var LE = 0
+    break;
+ case "1":
+    var LE = 1
+    break;
+  case "2":
+  var LE = 2
+    break;
+ case "3":
+   var LE = 3
+    break;
+}
+    switch(MMQ) {
+  case "0":
+    var ME = 0
+    break;
+ case "1":
+    var ME = 1
+    break;
+  case "2":
+  var ME = 2
+    break;
+ case "3":
+   var ME = 3
+    break;
+}
+    switch(NNQ) {
+  case "0":
+    var NE = 0
+    break;
+ case "1":
+    var NE = 1
+    break;
+  case "2":
+  var NE = 2
+    break;
+ case "3":
+   var NE = 3
+    break;
+}
+    switch(OOQ) {
+  case "0":
+    var FE = 0
+    break;
+ case "1":
+    var FE = 0.50
+    break;
+  case "2":
+  var FE = 1
+    break;
+ case "3":
+   var FE = 1.50
+    break;
+}
+    switch(PPQ) {
+  case "0":
+    var PE = 0
+    break;
+ case "1":
+    var PE = 1
+    break;
+  case "2":
+  var PE = 2
+    break;
+ case "3":
+   var PE = 3
+    break;
+}
      var TotalK =  AT +  AE 
     var TotalT =  "Total: " + "$" + TotalK
     if (FFF == "NDD") {
