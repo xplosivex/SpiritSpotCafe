@@ -121,8 +121,8 @@ var TE = 1
 }else{
 var TE = 0
 }
-     var TotalT = AE + BE + CE + DE + EE + FE + GE + HE + IE + JE + KE + LE + ME + NE + OE + PE + QE + RE + SE + TE
-    
-     console.log(TotalT)
+     var TotalK =   AE + BE + CE + DE + EE + FE + GE + HE + IE + JE + KE + LE + ME + NE + OE + PE + QE + RE + SE + TE
+    var TotalT =  "Total: " + "$" + TotalK
+     document.getElementById("TotalL").innerHTML = TotalT; 
 }
 
