@@ -4,13 +4,9 @@ var here = document.getElementById("Type").value
     hiddenDiv.style.display='block';
     Form.fileURL.focus();
     } 
-    else if ( here == "Smoothie"){
-    hiddenDiv3.style.display='block';
-     Form.fileURL.focus();
+    else if ( here == "Smoothie" || here == "Hot Chocolate" || here == "None"  ){
+   hiddenDiv.style.display='none';
     }
-else if (here == "Hot Chocolate" || here == "None"  ) {
-hiddenDiv.style.display='none';
-}
 
  
 }
