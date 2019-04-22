@@ -2,10 +2,12 @@ function change(){
 var here = document.getElementById("Type").value 
  if ( here == "Hot Caramel"  || here == "Hot Vanilla" || here == "Iced Caramel" || here  == "Iced Vanilla"  ) {
     hiddenDiv.style.display='block';
+   hiddenDiv3.style.display='none';
     Form.fileURL.focus();
     } 
     else if ( here == "Hot Chocolate" || here == "None"  ){
    hiddenDiv.style.display='none';
+     hiddenDiv3.style.display='none';
      document.getElementById("ToppingsA").checked = false; 
      document.getElementById("ToppingsB").checked = false;
       document.getElementById("ToppingsC").checked = false; 
