@@ -351,7 +351,7 @@ var ExtraRep = ExtraS.replace(/ 0 /g, '')
      }
      
      var TotalT =  "Total: " + "$" + TotalK
-      document.getElementById("TotalB").innerHTML = TotalT;
+    
     if (FFF == "NDD") {
     var TotalG =  "Total: " + "$" + TotalK + " + Special Request"
     document.getElementById("TotalL").innerHTML = TotalG;
