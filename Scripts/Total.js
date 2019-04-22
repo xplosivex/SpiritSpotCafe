@@ -4,6 +4,7 @@
     var here = document.getElementById("Type").value 
  if ( here == "Hot Caramel"  || here == "Hot Vanilla" || here == "Iced Caramel" || here  == "Iced Vanilla"  ) {
   var AT = 2
+  document.getElementById("ToppingsE").value  = ""
   } else if  ( here == "Smoothie" ) {
    var AT = 0
    var Topp = document.getElementById("ToppingsJ").value 
@@ -26,10 +27,12 @@
   }
    }   else if  ( here == "None" ) {
    var AT = 0
+   document.getElementById("ToppingsE").value  = Topp 
    } else if  ( here == "Hot Chocolate" ) {
    var AT = 1
    } else if  ( here == "Special Request" ) {
     var AT = 0
+    document.getElementById("ToppingsE").value  = Topp 
    var FFF = "NDD"
    }
   
