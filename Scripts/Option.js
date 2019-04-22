@@ -4,7 +4,7 @@ var here = document.getElementById("Type").value
     hiddenDiv.style.display='block';
     Form.fileURL.focus();
     } 
-    else if ( here == "Smoothie" || here == "Hot Chocolate" || here == "None"  ){
+    else if ( here == "Hot Chocolate" || here == "None"  ){
    hiddenDiv.style.display='none';
      document.getElementById("ToppingsA").checked = false; 
      document.getElementById("ToppingsB").checked = false;
@@ -14,6 +14,11 @@ var here = document.getElementById("Type").value
     }  else if ( here == "Smoothie" ) {
      hiddenDiv3.style.display='block';
     Form.fileURL.focus();
+     hiddenDiv.style.display='none';
+     document.getElementById("ToppingsA").checked = false; 
+     document.getElementById("ToppingsB").checked = false;
+      document.getElementById("ToppingsC").checked = false; 
+     document.getElementById("ToppingsD").checked = false;
     }
 
  
