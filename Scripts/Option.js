@@ -6,7 +6,11 @@ var here = document.getElementById("Type").value
     } 
     else if ( here == "Smoothie" || here == "Hot Chocolate" || here == "None"  ){
    hiddenDiv.style.display='none';
-     document.getElementById("Toppings").checked = false; 
+     document.getElementById("ToppingsA").checked = false; 
+     document.getElementById("ToppingsB").checked = false;
+      document.getElementById("ToppingsC").checked = false; 
+     document.getElementById("ToppingsD").checked = false;
+      
     }
 
  
