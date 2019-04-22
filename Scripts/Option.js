@@ -20,6 +20,7 @@ function change2(){
     } 
     else {
     hiddenDiv2.style.display='none';
+    }if ( here2 == "No") {
   document.getElementById("ExtraA").checked = false; 
 document.getElementById("ExtraB").checked = false;
  document.getElementById("ExtraC").checked = false;
