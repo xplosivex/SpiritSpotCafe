@@ -339,10 +339,15 @@ switch(IIQ) {
     break;
 }
     var ExtraS = AAQ + " " + BBQ + " " + CCQ + " " + DDQ + " " + EEQ + " " + FFQ + " " + GGQ + " " + HHQ + " " + IIQ + " " + JJQ + " " + KKQ + " " + LLQ + " " + MMQ + " " + NNQ + " " + OOQ + " " + PPQ + " " + QQQ + " " + RRQ + " " + SSQ + " " + TTQ
-   
- 
-    document.getElementById("ExtraSelect").value = ExtraS.replace(/ 0 /g, '');;
-    var TotalK =  AT +  AE + BE + CE + DE + EE + FE + GE + HE + IE + JE + KE + LE + ME + NE + OE + PE + QE + RE + SE + TE
+    var here2N = document.getElementById("Extra2").value 
+
+    document.getElementById("ExtraSelect").value = ExtraS.replace(/ 0 /g, '');\
+      if (here2N = "Yes") {
+     var TotalDF = AE + BE + CE + DE + EE + FE + GE + HE + IE + JE + KE + LE + ME + NE + OE + PE + QE + RE + SE + TE
+     } else {
+    var TotalDF = 0
+     }
+     var TotalK =  AT  + TotalDF
     var TotalT =  "Total: " + "$" + TotalK
     if (FFF == "NDD") {
     var TotalG =  "Total: " + "$" + TotalK + " + Special Request"
