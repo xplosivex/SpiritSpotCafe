@@ -9,19 +9,23 @@
    var Topp = document.getElementById("ToppingsJ").value 
   if ( Topp == "Strawberry" ){
   var AT = 3
-  document.getElementById("Toppings").value = "Strawberry"
+  document.getElementById("ToppingsA").value = "Strawberry Smoothie"
+   document.getElementById("ToppingsA").checked = true;
   }
    if ( Topp == "Strawberry Banana" ){
   var AT = 3
-  document.getElementById("Toppings").value = "Strawberry Banana"
+  document.getElementById("ToppingsA").value = "Strawberry Banana Smoothie"
+    document.getElementById("ToppingsA").checked = true;
   }
     if ( Topp == "Mango" ){
   var AT = 3
-  document.getElementById("Toppings").value = "Mango"
+  document.getElementById("ToppingsA").value = "Mango Smoothie"
+     document.getElementById("ToppingsA").checked = true;
   }
     if ( Topp == "Naked" ){
   var AT = 2
-  document.getElementById("Toppings").value = "Naked"
+  document.getElementById("ToppingsA").value = "Naked Smoothie"
+     document.getElementById("ToppingsA").checked = true;
   }
    }   else if  ( here == "None" ) {
    var AT = 0
