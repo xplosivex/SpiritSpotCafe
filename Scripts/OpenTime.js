@@ -11,7 +11,7 @@
   if (HoursTrue == true && MinutesTrue == true  ){
     YesOrderTime.style.display='block';
  NoOrderTime.style.display='none';
-        
+         NotTime.style.display='block'
 
   } else if (HoursTrue == false  && MinutesTrue == false )  {
   NotTime.style.display='none'
