@@ -67,7 +67,7 @@ function change3(){
     
     Form.fileURL.focus();
     } 
-    else {
+   }if ( here4 == "No") {
     hiddenDiv4.style.display='none';
     }
 }
