@@ -9,13 +9,13 @@
   var HoursTrue = OpenHours.includes(Hours)
   var MinutesTrue = OpenMinutes.includes(Minutes)
   if (HoursTrue == true && MinutesTrue == true  ){
-  
- NotTime.style.display='none'
-   NoOrderTime.style.display='block';
-  } else if (HoursTrue == false  && MinutesTrue == false )  {
-   YesOrderTime.style.display='block';
+    YesOrderTime.style.display='block';
  NoOrderTime.style.display='none';
         
+
+  } else if (HoursTrue == false  && MinutesTrue == false )  {
+  NotTime.style.display='none'
+   NoOrderTime.style.display='block';
   
   }
  }
