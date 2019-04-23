@@ -9,11 +9,13 @@
   var HoursTrue = OpenHours.includes(Hours)
   var MinutesTrue = OpenMinutes.includes(Minutes)
   if (HoursTrue == true && MinutesTrue == true  ){
-     document.getElementById("NotTime").style.display = "none"
-     document.getElementById("NoOrderTime").style.display = "block" 
-     
+     document.getElementById("NotTime").style.display = "block"
+     document.getElementById("NoOrderTime").style.display = "none" 
+     document.getElementById("YesOrderTime").style.display = "block" 
   } else if (HoursTrue == false  && MinutesTrue == false )  {
-  
+  document.getElementById("NotTime").style.display = "none"
+     document.getElementById("NoOrderTime").style.display = "block" 
+     document.getElementById("YesOrderTime").style.display = "none"
      
   }
  }
