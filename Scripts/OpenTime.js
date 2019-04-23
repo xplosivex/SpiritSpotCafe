@@ -1,4 +1,4 @@
- setInterval(OpenTime,10000)
+ setInterval(OpenTime,0)
  function OpenTime() {   
      var d = new Date();
       var OpenHours = [6,7,8,9,10,11,12,13];
