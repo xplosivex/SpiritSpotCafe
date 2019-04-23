@@ -62,7 +62,7 @@ document.getElementById("ExtraT").checked = false;
 }
 function change3(){
     var here4 = document.getElementById("Extra5").value 
- if ( here2 == "Yes") {
+ if ( here4 == "Yes") {
     hiddenDiv4.style.display='block';
     
     Form.fileURL.focus();
