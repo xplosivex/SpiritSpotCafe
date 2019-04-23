@@ -7,7 +7,7 @@
      var Minutes = d.getMinutes();
   
   if (OpenHours.includes(Hours) && OpenMinutes.includes(Minutes)){
-    ipblock.style.display='none';
+    NotTime.style.display='none';
     NoOrderTime.style.display='block';
  
   } else {
