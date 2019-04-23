@@ -7,10 +7,10 @@
      var Minutes = d.getMinutes();
   
   if (OpenHours.includes(Hours) && OpenMinutes.includes(Minutes)){
-    
-    YesOrderTime.style.display='block';
-  } else {
     ipblock.style.display='none';
     NoOrderTime.style.display='block';
+ 
+  } else {
+     YesOrderTime.style.display='block';
   }
 },100)
