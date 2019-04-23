@@ -9,8 +9,9 @@
   var HoursTrue = OpenHours.includes(Hours)
   var MinutesTrue = OpenMinutes.includes(Minutes)
   if (HoursTrue == true && MinutesTrue == true  ){
-     YesOrderTime.style.display='block';
-   NotTime.style.display='none';
+     
+    document.getElementById("YesOrderTime").style.display = "block";
+     document.getElementById("NotTime").style.display = "none";
   } else if (HoursTrue == false  && MinutesTrue == false )  {
   NotTime.style.display='none';
      NoOrderTime.style.display='block';
