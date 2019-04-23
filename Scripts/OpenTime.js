@@ -7,13 +7,13 @@
      var Minutes = d.getMinutes();
   
   if (OpenHours.includes(Hours) && OpenMinutes.includes(Minutes)){
-   YesOrderTime.style.display='block';
- NoOrderTime.style.display='none';
   
-  } else if (!OpenHours.includes(Hours) && !OpenMinutes.includes(Minutes))  {
-      
-      NotTime.style.display='none'
+  NotTime.style.display='none'
    NoOrderTime.style.display='block';
+  } else if (!OpenHours.includes(Hours) && !OpenMinutes.includes(Minutes))  {
+     YesOrderTime.style.display='block';
+ NoOrderTime.style.display='none';
+      
   
   }
  }
