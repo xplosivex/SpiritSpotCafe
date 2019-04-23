@@ -26,13 +26,13 @@
    </aside>
 <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
 <!-- START HERE -->
- 
+   <div id="NoOrderTime" style="border:black double 8px; display:none; border-radius: 15px; background-color:white;"><p> Orders Are Currently Not Being Accepted</p>   </div>
+       <div id="YesOrderTime" style="border:black double 8px; border-radius: 15px; background-color:white;"><p> Orders Are Currently Being Accepted</p>   </div>
 
-    <form class="gform pure-form pure-form-stacked" method="POST"
+    <form id="NotTime" class="gform pure-form pure-form-stacked" method="POST"
 action="https://script.google.com/macros/s/AKfycbw9mN1c_CT51vCimuvCqUCBBbu1Xq9m3p_qAVukov-B0gmn9t8/exec">
     <!-- change the form action to your script url -->
-      <div id="NoOrderTime" style="border:black double 8px; display:none; border-radius: 15px; background-color:white;"><p> Orders Are Currently Not Being Accepted</p>   </div>
-       <div id="YesOrderTime" style="border:black double 8px; border-radius: 15px; background-color:white;"><p> Orders Are Currently Being Accepted</p>   </div>
+    
  <div id="IpBlock" style="border:black double 8px; display:none; border-radius: 15px; background-color:white;"><p> You have been blocked from ordering.</p>   </div>
     
      <div id="ipblock" class="form-elements " style=" float:left; width:100%; height:1000; background:url("https://xplosivex.github.io/SpiritSpotCafe/Images/Background.jpg");">
