@@ -19,5 +19,7 @@
      
   }
  }
-
+if (!document.getElementById("YesOrderTime").style.display = "none"){
+document.getElementById("YesOrderTime").style.display = "none"
+}
 OpenTime()
