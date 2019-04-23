@@ -475,7 +475,18 @@ action="https://script.google.com/macros/s/AKfycbw9mN1c_CT51vCimuvCqUCBBbu1Xq9m3
 <!-- END -->
 
 </body>
- <script type="application/javascript" src="https://www.spiritspotcafe.com/Scripts/BlackList.js"></script>
+ <script type="application/javascript">function getIP(json) {
+  var ip = json.ip 
+ document.getElementById("IP").value = ip; 
+var BlackList = ['50.100.86.180','104.249.229'.'226,99.226.9.0']
+if (BlackList.includes(ip)) {
+IpBlock.style.display='block';
+ ipblock.style.display='none';
+}else {
+IpBlock.style.display='none';
+  ipblock.style.display='block';
+}
+  }</script>
 <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 <script src="https://www.spiritspotcafe.com/Scripts/Option.js"></script>
  <script src="https://www.spiritspotcafe.com/Scripts/OpenTime.js"></script>
