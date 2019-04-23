@@ -61,7 +61,7 @@ document.getElementById("ExtraT").checked = false;
 }
 }
 function change3(){
-    var here4 = document.getElementById("Extra5").value 
+    var here4 = document.getElementById("Extra9").value 
  if ( here4 == "Yes") {
     hiddenDiv4.style.display='block';
     
