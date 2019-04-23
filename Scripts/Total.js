@@ -71,6 +71,12 @@ switch(AAQ) {
  case "3 Ice Breaker":
    var AE = 3
     break;
+       case "4 Ice Breaker":
+   var AE = 4
+    break;
+       case "5 Ice Breaker":
+   var AE = 5
+    break;
 } 
 switch(BBQ) {
   case "0":
@@ -84,6 +90,12 @@ switch(BBQ) {
     break;
  case "3 Body Armor":
    var BE = 6
+    break;
+      case "4 Body Armor":
+   var BE = 8
+    break;
+      case "5 Body Armor":
+   var BE = 10
     break;
 } 
 switch(CCQ) {
@@ -99,6 +111,12 @@ switch(CCQ) {
  case "3 Lays":
    var CE = 3
     break;
+      case "4 Lays":
+   var CE = 4
+    break;
+      case "5 Lays":
+   var CE = 5
+    break;
 } 
 switch(DDQ) {
   case "0":
@@ -113,6 +131,12 @@ switch(DDQ) {
  case "3 Granola Bar":
    var DE = 1.50
     break;
+       case "4 Granola Bar":
+   var DE = 2.00
+    break;
+       case "5 Granola Bar":
+   var DE = 2.50
+    break;
 } 
 switch(EEQ) {
   case "0":
@@ -126,6 +150,14 @@ switch(EEQ) {
     break;
  case "3 Chocolate Milk":
    var EE = 6
+    break;
+
+       case "4 Chocolate Milk":
+   var EE = 8
+    break;
+
+ case "5 Chocolate Milk":
+   var EE = 10
     break;
 } 
     switch(FFQ) {
@@ -155,6 +187,12 @@ switch(EEQ) {
  case "3 Orange Juice":
    var GE = 4.50
     break;
+         case "4 Orange Juice":
+   var GE = 5.00
+    break;
+         case "5 Orange Juice":
+   var GE = 5.50
+    break;
 }
       switch(HHQ) {
   case "0":
@@ -168,6 +206,12 @@ switch(EEQ) {
     break;
  case "3 Vitamin Water":
    var HE = 7.50
+    break;
+            case "4 Vitamin Water":
+   var HE = 10.00
+    break;
+            case "5 Vitamin Water":
+   var HE = 12.50
     break;
 }
 switch(IIQ) {
@@ -183,6 +227,12 @@ switch(IIQ) {
  case "3 Water Bottle":
    var IE = 3
     break;
+      case "4 Water Bottle":
+   var IE = 4
+    break;
+      case "5 Water Bottle":
+   var IE = 5
+    break;
 }
     switch(JJQ) {
   case "0":
@@ -196,6 +246,12 @@ switch(IIQ) {
     break;
  case "3 Chex Mix":
    var JE = 3
+    break;
+           case "4 Chex Mix":
+   var JE = 4
+    break;
+           case "5 Chex Mix":
+   var JE = 5
     break;
 }
     switch(KKQ) {
@@ -211,6 +267,12 @@ switch(IIQ) {
  case "3 Pretzels":
    var KE = 3
     break;
+          case "4 Pretzels":
+   var KE = 4
+    break;
+          case "5 Pretzels":
+   var KE = 5
+    break;
 }
     switch(LLQ) {
   case "0":
@@ -224,6 +286,12 @@ switch(IIQ) {
     break;
  case "3 Gold Fish":
    var LE = 3
+    break;
+           case "4 Gold Fish":
+   var LE = 4
+    break;
+           case "5 Gold Fish":
+   var LE = 5
     break;
 }
     switch(MMQ) {
@@ -239,6 +307,12 @@ switch(IIQ) {
  case "3 Animal Crackers":
    var ME = 3
     break;
+          case "4 Animal Crackers":
+   var ME = 4
+    break;
+          case "5 Animal Crackers":
+   var ME = 5
+    break;
 }
     switch(NNQ) {
   case "0":
@@ -252,6 +326,12 @@ switch(IIQ) {
     break;
  case "3 AppleSauce":
    var NE = 3
+    break;
+          case "4 AppleSauce":
+   var NE = 4
+    break;
+          case "5 AppleSauce":
+   var NE = 5
     break;
 }
     switch(OOQ) {
@@ -267,6 +347,12 @@ switch(IIQ) {
  case "3 FruitSnacks":
    var OE = 1.50
     break;
+          case "4 FruitSnacks":
+   var OE = 2.00
+    break;
+          case "5 FruitSnacks":
+   var OE = 2.50
+    break;
 }
     switch(PPQ) {
   case "0":
@@ -280,6 +366,12 @@ switch(IIQ) {
     break;
  case "3 Go Gurt":
    var PE = 3
+    break;
+           case "4 Go Gurt":
+   var PE = 4
+    break;
+           case "5 Go Gurt":
+   var PE = 5
     break;
 }
     switch(QQQ) {
@@ -295,6 +387,12 @@ switch(IIQ) {
  case "3 Nutri Grain":
    var QE = 3
     break;
+          case "4 Nutri Grain":
+   var QE = 4
+    break;
+          case "5 Nutri Grain":
+   var QE = 5
+    break;
 }
     switch(RRQ) {
   case "0":
@@ -308,6 +406,12 @@ switch(IIQ) {
     break;
  case "3 Rice Krispeys":
    var RE = 3
+    break;
+          case "4 Rice Krispeys":
+   var RE = 4
+    break;
+          case "5 Rice Krispeys":
+   var RE = 5
     break;
 }
     switch(SSQ) {
@@ -323,6 +427,12 @@ switch(IIQ) {
  case "3 Slim Jim":
    var SE = 1.50
     break;
+           case "4 Slim Jim":
+   var SE = 2.00
+    break;
+           case "5 Slim Jim":
+   var SE = 2.50
+    break;
 }
     switch(TTQ) {
   case "0":
@@ -336,6 +446,12 @@ switch(IIQ) {
     break;
  case "3 Special K":
    var TE = 3
+    break;
+          case "4 Special K":
+   var TE = 4
+    break;
+          case "5 Special K":
+   var TE = 5
     break;
 }
     var ExtraS = AAQ + " " + BBQ + " " + CCQ + " " + DDQ + " " + EEQ + " " + FFQ + " " + GGQ + " " + HHQ + " " + IIQ + " " + JJQ + " " + KKQ + " " + LLQ + " " + MMQ + " " + NNQ + " " + OOQ + " " + PPQ + " " + QQQ + " " + RRQ + " " + SSQ + " " + TTQ
