@@ -10,10 +10,10 @@
   var MinutesTrue = OpenMinutes.includes(Minutes)
   if (HoursTrue == true && MinutesTrue == true  ){
      
-    document.getElementById("YesOrderTime").style.display = "block";
-     document.getElementById("NotTime").style.display = "none";
+    
+     document.getElementById("NotTime").style.display = "block";
   } else if (HoursTrue == false  && MinutesTrue == false )  {
-  NotTime.style.display='none';
+  document.getElementById("YesOrderTime").style.display = "block";
      NoOrderTime.style.display='block';
      
   }
