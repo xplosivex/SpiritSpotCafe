@@ -60,14 +60,3 @@ document.getElementById("ExtraT").checked = false;
 
 }
 }
-function change3(){
-    var here4 = document.getElementById("Extra9").value 
- if ( here4 == "Yes") {
-    hiddenDiv4.style.display='block';
-    
-    Form.fileURL.focus();
-    } 
-   }if ( here4 == "No") {
-    hiddenDiv4.style.display='none';
-    }
-}
