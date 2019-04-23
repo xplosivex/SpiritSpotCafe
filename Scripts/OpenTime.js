@@ -8,7 +8,8 @@
   
   if (OpenHours.includes(Hours) && OpenMinutes.includes(Minutes)){
    YesOrderTime.style.display='block';
- 
+ NoOrderTime.style.display='none';
+   NotTime.style.display='block';
   } else {
      
     NotTime.style.display='none';
