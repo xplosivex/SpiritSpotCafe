@@ -7,11 +7,12 @@
      var Minutes = d.getMinutes();
   
   if (OpenHours.includes(Hours) && OpenMinutes.includes(Minutes)){
-    NotTime.style.display='none';
-    NoOrderTime.style.display='block';
+   YesOrderTime.style.display='block';
  
   } else {
-     YesOrderTime.style.display='block';
+     
+    NotTime.style.display='none';
+    NoOrderTime.style.display='block';
   }
  }
 OpenTime()
