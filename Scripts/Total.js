@@ -173,6 +173,12 @@ switch(EEQ) {
  case "3 Cheez-Itz":
    var FE = 3
     break;
+           case "4 Cheez-Itz":
+   var FE = 4
+    break;
+           case "5 Cheez-Itz":
+   var FE = 5
+    break;
 }
    switch(GGQ) {
   case "0":
