@@ -328,13 +328,13 @@ switch(IIQ) {
   case "0":
     var TE = 0
     break;
- case "1 Speical K":
+ case "1 Special K":
     var TE = 1
     break;
-  case "2 Speical K":
+  case "2 Special K":
   var TE = 2
     break;
- case "3 Speical K":
+ case "3 Special K":
    var TE = 3
     break;
 }
