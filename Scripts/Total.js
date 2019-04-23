@@ -404,19 +404,19 @@ switch(IIQ) {
   case "0":
     var RE = 0
     break;
- case "1 Rice Krispeys":
+ case "1 Rice Krispes":
     var RE = 1
     break;
-  case "2 Rice Krispeys":
+  case "2 Rice Krispys":
   var RE = 2
     break;
- case "3 Rice Krispeys":
+ case "3 Rice Krispys":
    var RE = 3
     break;
-          case "4 Rice Krispeys":
+          case "4 Rice Krispys":
    var RE = 4
     break;
-          case "5 Rice Krispeys":
+          case "5 Rice Krispys":
    var RE = 5
     break;
 }
