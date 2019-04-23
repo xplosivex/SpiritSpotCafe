@@ -11,10 +11,9 @@
   if (HoursTrue == true && MinutesTrue == true  ){
      
     
-     document.getElementById("NotTime").style.display = "block";
+     
   } else if (HoursTrue == false  && MinutesTrue == false )  {
-  document.getElementById("YesOrderTime").style.display = "block";
-     NoOrderTime.style.display='block';
+  
      
   }
  }
