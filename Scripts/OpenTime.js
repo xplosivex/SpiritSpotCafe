@@ -7,7 +7,7 @@ function OpenTime () {
     if (HTrue = true) {
     document.getElementById("NotTime").style.display = "block"
      document.getElementById("NoOrderTime").style.display = "none" 
-     document.getElementById("YesOrderTime").style.display = "block" 
+     document.getElementById("YesOrderTime").style.display = "none" 
     } else {
       document.getElementById("NotTime").style.display = "none"
      document.getElementById("NoOrderTime").style.display = "block" 
