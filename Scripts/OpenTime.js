@@ -1,9 +1,9 @@
 setInterval(OpenTime,0)
 function OpenTime () {
- var myDate = new Date();
- var hours = myDate.getHours();
- var days = myDate.getDay() 
- if ( days == 0 || days == 6 || days == 3){
+var myDate = new Date();
+var hours = myDate.getHours();
+var days = myDate.getDay() 
+if (days == 0 || days == 6){
 document.getElementById("NotTime").style.display = "none"
 document.getElementById("NoOrderTime").style.display = "block" 
 document.getElementById("YesOrderTime").style.display = "none" 
