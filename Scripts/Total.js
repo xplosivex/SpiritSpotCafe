@@ -59,87 +59,91 @@ var RRQ = document.getElementById("RQ").value
 var SSQ = document.getElementById("SQ").value
 var TTQ = document.getElementById("TQ").value
 switch(AAQ) {
-  case "0":
-    var AE = 0  
-    break;
- case "1 Ice Breaker":
-    var AE = 1 
-    break;
-  case "2 Ice Breaker":
-  var AE = 2
-    break;
- case "3 Ice Breaker":
+case "0":
+   var AE = 0  
+   break;
+case "1 Ice Breaker":
+   var AE = 1 
+   break;
+case "2 Ice Breaker":
+   var AE = 2
+   break;
+case "3 Ice Breaker":
    var AE = 3
-    break;
-       case "4 Ice Breaker":
+   break;
+case "4 Ice Breaker":
    var AE = 4
-    break;
-       case "5 Ice Breaker":
+   break;
+case "5 Ice Breaker":
    var AE = 5
-    break;
+   break;
 } 
+    
 switch(BBQ) {
-  case "0":
-    var BE = 0
-    break;
- case "1 Body Armor":
-    var BE = 2
-    break;
-  case "2 Body Armor":
-  var BE = 4
-    break;
- case "3 Body Armor":
+   case "0":
+   var BE = 0
+break;
+   case "1 Body Armor":
+   var BE = 2
+break;
+   case "2 Body Armor":
+   var BE = 4
+break;
+   case "3 Body Armor":
    var BE = 6
-    break;
-      case "4 Body Armor":
+break;
+   case "4 Body Armor":
    var BE = 8
-    break;
-      case "5 Body Armor":
+break;
+   case "5 Body Armor":
    var BE = 10
-    break;
+break;
 } 
+     
 switch(CCQ) {
-  case "0":
-    var CE = 0
-    break;
- case "1 Lays":
-    var CE = 1
-    break;
-  case "2 Lays":
-  var CE = 2
-    break;
- case "3 Lays":
+case "0":
+   var CE = 0
+   break;
+case "1 Lays":
+   var CE = 1
+   break;
+case "2 Lays":
+   var CE = 2
+   break;
+case "3 Lays":
    var CE = 3
-    break;
-      case "4 Lays":
+   break;
+case "4 Lays":
    var CE = 4
-    break;
-      case "5 Lays":
+   break;
+case "5 Lays":
    var CE = 5
-    break;
+   break;
 } 
+      
 switch(DDQ) {
-  case "0":
-    var DE = 0
-    break;
- case "1 Granola Bar":
-    var DE = 0.50
-    break;
-  case "2 Granola Bar":
-  var DE = 1
-    break;
- case "3 Granola Bar":
+case "0":
+   var DE = 0
+   break;
+case "1 Granola Bar":
+   var DE = 0.50
+   break;
+case "2 Granola Bar":
+   var DE = 1
+   break;
+case "3 Granola Bar":
    var DE = 1.50
-    break;
-       case "4 Granola Bar":
+   break;
+case "4 Granola Bar":
    var DE = 2.00
-    break;
-       case "5 Granola Bar":
+   break;
+case "5 Granola Bar":
    var DE = 2.50
-    break;
+   break;
 } 
+      
 switch(EEQ) {
-  case "0":
+case "0":
     var EE = 0
     break;
  case "1 Chocolate Milk":
