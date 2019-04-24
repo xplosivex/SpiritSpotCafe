@@ -5,7 +5,7 @@ function OpenTime () {
    var OpenHours = ["DDD"];
   var HTrue = OpenHours.includes(hours)
     if (HTrue = true) {
-    document.getElementById("NotTime").style.display = "block"
+    document.getElementById("NotTime").style.display = "none"
      document.getElementById("NoOrderTime").style.display = "none" 
      document.getElementById("YesOrderTime").style.display = "block" 
     } else {
