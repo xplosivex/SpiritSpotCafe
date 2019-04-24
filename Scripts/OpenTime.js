@@ -1,3 +1,4 @@
+setInterval(OpenTime,0)
 function OpenTime () {
   var myDate = new Date();
   var hours = myDate.getHours();
