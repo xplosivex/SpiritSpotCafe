@@ -4,7 +4,7 @@ function OpenTime () {
   var hours = myDate.getHours();
  
     if ( hours > 6) {
-      if (hours < 16){
+      if (hours < 15){
     document.getElementById("NotTime").style.display = "block"
      document.getElementById("NoOrderTime").style.display = "none" 
      document.getElementById("YesOrderTime").style.display = "block" 
