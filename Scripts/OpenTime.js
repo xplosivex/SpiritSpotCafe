@@ -3,7 +3,7 @@ function OpenTime () {
   var myDate = new Date();
   var hours = myDate.getHours();
  
-    if (hours > 6 || hours < 10) {
+    if (hours > 6 || hours < 13) {
     document.getElementById("NotTime").style.display = "block"
      document.getElementById("NoOrderTime").style.display = "none" 
      document.getElementById("YesOrderTime").style.display = "block" 
