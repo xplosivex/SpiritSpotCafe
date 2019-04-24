@@ -12,16 +12,18 @@
 <title>Order Up!</title>
 <link rel="icon" href="https://www.spiritspotcafe.com/Images/PageIcon.ico">
 </head>
+     
 <header>
 <ul class="ul" style="font-family:Gilford;">
-<li class="li" ><a  class="lia" href="index.html">Home</a></li>
-<li class="li"><a class="lia"href="menu.html">Menu</a></li>
-<li class="li"><a class="lia"href="order.html" >Order</a></li>
-<li class="li"><a class="lia" href="contact.html">Contact</a></li>
+     <li class="li" ><a  class="lia" href="index.html">Home</a></li>
+     <li class="li"><a class="lia"href="menu.html">Menu</a></li>
+     <li class="li"><a class="lia"href="order.html" >Order</a></li>
+     <li class="li"><a class="lia" href="contact.html">Contact</a></li>
 </ul>
 </header>
+     
 <body onload="OpenTime()" style="margin:0; font-size: 15px;" background="https://xplosivex.github.io/SpiritSpotCafe/Images/Background.jpg">
-<aside></aside>
+
 <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
 <!-- START HERE -->
 <div id="NoOrderTime" style="border:black double 8px;  border-radius: 15px; display:none; background-color:white;"><p> Orders Are Currently Not Being Accepted</p>   </div>
@@ -30,9 +32,10 @@
 <!-- change the form action to your script url -->
 <div id="IpBlock" style="border:black double 8px; display:none; border-radius: 15px; background-color:white;"><p> You have been blocked from ordering.</p>   </div>
 <div id="ipblock" class="form-elements " style=" float:left; width:100%; height:1000; background:url("https://xplosivex.github.io/SpiritSpotCafe/Images/Background.jpg");">
+
 <fieldset class="pure-group" style="border:black double 8px; border-radius: 15px; background-color:white;">
 <label for="Name">Name:</label><br>
-<input  required id="Name"  class="pure-input-rounded" name="Name"  /> 
+     <input  required id="Name"  class="pure-input-rounded" name="Name"  /> 
 </fieldset>
      
 <fieldset class="pure-group" style="border:black double 8px; border-radius: 15px; background-color:white;">
@@ -308,153 +311,138 @@
 </table>
 
 <table>
-      <tr>
-        <th >
-         
-        <select id="PQ" >    
-         <option  value="0">0</option>
-  <option  value="1 Go Gurt">1</option>
-   <option  value="2 Go Gurt">2</option>
-         <option  value="3 Go Gurt">3</option>
-         <option  value="4 Go Gurt">4</option>
-         <option  value="5 Go Gurt">5</option>
+<tr><th>
+<select id="PQ" >    
+     <option  value="0">0</option>
+     <option  value="1 Go Gurt">1</option>
+     <option  value="2 Go Gurt">2</option>
+     <option  value="3 Go Gurt">3</option>
+     <option  value="4 Go Gurt">4</option>
+     <option  value="5 Go Gurt">5</option>
 </select> 
-          
-        </th><th>   
-       <li><p>Go Gurt</p><br></li>
-       </th></tr></table>
-        <table>
-      <tr>
-        <th >
-         
-        <select id="QQ" >   
-         <option  value="0">0</option>
-  <option  value="1 Nutri Grain">1</option>
-   <option  value="2 Nutri Grain">2</option>
-         <option  value="3 Nutri Grain">3</option>
-          <option  value="4 Nutri Grain">4</option>
-          <option  value="5 Nutri Grain">5</option>
+</th><th>   
+<li><p>Go Gurt</p><br></li>
+</th></tr>
+</table>
+       
+<table>
+<tr><th>
+<select id="QQ" >   
+     <option  value="0">0</option>
+     <option  value="1 Nutri Grain">1</option>
+     <option  value="2 Nutri Grain">2</option>
+     <option  value="3 Nutri Grain">3</option>
+     <option  value="4 Nutri Grain">4</option>
+     <option  value="5 Nutri Grain">5</option>
 </select> 
-          
-        </th><th>   
-       <li><p>Nutri Grain</p><br></li>
-       </th></tr></table>
-        <table>
-      <tr>
-        <th >
-         
-        <select id="RQ" >  
-         <option  value="0">0</option>
-  <option  value="1 Rice Krispys">1</option>
-   <option  value="2 Rice Krispys">2</option>
-         <option  value="3 Rice Krispys">3</option>
-         <option  value="4 Rice Krispys">4</option>
-         <option  value="5 Rice Krispys">5</option>
+</th><th>   
+<li><p>Nutri Grain</p><br></li>
+</th></tr></table>
+
+<table>
+<tr><th>
+<select id="RQ" >  
+     <option  value="0">0</option>
+     <option  value="1 Rice Krispys">1</option>
+     <option  value="2 Rice Krispys">2</option>
+     <option  value="3 Rice Krispys">3</option>
+     <option  value="4 Rice Krispys">4</option>
+     <option  value="5 Rice Krispys">5</option>
 </select> 
-          
-        </th><th>      
-       <li><p>Rice Krispys</p><br></li>
-       </th></tr></table>
-        <table>
-      <tr>
-        <th >
-         
-        <select id="SQ" >  
-         <option  value="0">0</option>
-  <option  value="1 Slim Jim">1</option>
-   <option  value="2 Slim Jim">2</option>
-         <option  value="3 Slim Jim">3</option>
-         <option  value="4 Slim Jim">4</option>
-         <option  value="5 Slim Jim">5</option>
+</th><th>      
+<li><p>Rice Krispys</p><br></li>
+</th></tr></table>
+
+<table>
+<tr><th>
+<select id="SQ" >  
+     <option  value="0">0</option>
+     <option  value="1 Slim Jim">1</option>
+     <option  value="2 Slim Jim">2</option>
+     <option  value="3 Slim Jim">3</option>
+     <option  value="4 Slim Jim">4</option>
+     <option  value="5 Slim Jim">5</option>
 </select> 
-          
-        </th><th> 
-       <li><p>Slim Jim</p><br></li>
-       </th></tr></table>
-        <table>
-      <tr>
-        <th >
-         
-        <select id="TQ" >  
-         <option  value="0">0</option>
-  <option  value="1 Special K">1</option>
-   <option  value="2 Special K">2</option>
-         <option  value="3 Special K">3</option>
-         <option  value="4 Special K">4</option>
-         <option  value="5 Special K">5</option>
+</th><th> 
+<li><p>Slim Jim</p><br></li>
+</th></tr>
+</table>
+
+<table>
+<tr><th>
+<select id="TQ" >  
+     <option  value="0">0</option>
+     <option  value="1 Special K">1</option>
+     <option  value="2 Special K">2</option>
+     <option  value="3 Special K">3</option>
+     <option  value="4 Special K">4</option>
+     <option  value="5 Special K">5</option>
 </select> 
-          
-        </th><th>   
-       <li><p>Special K</p><br></li>
-       </th></tr></table>
-      
+</th><th>   
+<li><p>Special K</p><br></li>
+</th></tr>
+</table>
 </ul>
- 
-     </fieldset>
+</fieldset>
      
-      <fieldset class="pure-group" style="border:black; display:none; double 8px; border-radius: 15px; background-color:white;">
-       <label for="Extra">Extra:</label><br>
-        <input  required id="ExtraSelect"  class="pure-input-rounded" name="Extra"   /> 
-     </fieldset>
+<fieldset class="pure-group" style="border:black; display:none; double 8px; border-radius: 15px; background-color:white;">
+<label for="Extra">Extra:</label><br>
+     <input  required id="ExtraSelect"  class="pure-input-rounded" name="Extra"   /> 
+</fieldset>
 
  
-      <fieldset id="hiddenDiv4" class="pure-group" style="border:black double 8px; border-radius: 15px; background-color:white;">
-       <label for="Pickup Time">Pickup Time</label><br>
-        <input  class="pure-input-rounded" value="Now" name="Pickup Time"   /> 
-     </fieldset>
-   <fieldset class="pure-group" style=" border:black double 8px; border-radius: 15px; background-color:white;">
-       <label for="Email">Your Email Address:</label> <br>
-        <input id="Email" class="pure-input-rounded" name="Email" type="Email" value=""
-               required placeholder="Your email."/>
-        <span class="email-invalid" style="display:none">
-          Must be a valid email address</span>
-      </fieldset>
-    
-      <fieldset class="pure-group" style="border:black double 8px; display:none; border-radius: 15px; background-color:white;">
-       <label for="Total">Total:</label><br>
-        <input  required id="TotalM"  class="pure-input-rounded" name="Total"   /> 
-     </fieldset>
-  
-     <fieldset class="pure-group" style="border:black double 8px; display:none; border-radius: 15px; background-color:white;">
-       <label for="IP">IP:</label><br>
-        <input  required id="IP"  class="pure-input-rounded" name="IP"   /> 
-     </fieldset>
+<fieldset id="hiddenDiv4" class="pure-group" style="border:black double 8px; border-radius: 15px; background-color:white;">
+<label for="Pickup Time">Pickup Time</label><br>
+     <input  class="pure-input-rounded" value="Now" name="Pickup Time"   /> 
+</fieldset>
      
-        <div id="TotalL" style="border:black double 8px; border-radius: 15px; font-size:23px; background-color:white;"></div>
-      <button  style=" border:black double 8px; border-radius: 15px; padding-left:83%; background-color:white;" class="button-success pure-button button-xlarge">
-        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
-    </div>
+<fieldset class="pure-group" style=" border:black double 8px; border-radius: 15px; background-color:white;">
+<label for="Email">Your Email Address:</label> <br>
+     <input id="Email" class="pure-input-rounded" name="Email" type="Email" value="" required placeholder="Your email."/>
+<span class="email-invalid" style="display:none"> Must be a valid email address</span>
+</fieldset>
+    
+<fieldset class="pure-group" style="border:black double 8px; display:none; border-radius: 15px; background-color:white;">
+<label for="Total">Total:</label><br>
+     <input  required id="TotalM"  class="pure-input-rounded" name="Total"   /> 
+</fieldset>
+  
+<fieldset class="pure-group" style="border:black double 8px; display:none; border-radius: 15px; background-color:white;">
+<label for="IP">IP:</label><br>
+     <input  required id="IP"  class="pure-input-rounded" name="IP"   /> 
+</fieldset>
+     
+<div id="TotalL" style="border:black double 8px; border-radius: 15px; font-size:23px; background-color:white;"></div>
+
+<button  style=" border:black double 8px; border-radius: 15px; padding-left:83%; background-color:white;" class="button-success pure-button button-xlarge">
+<i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+</div>
   
 <div id="Thanks" style="border:black double 8px; border-radius: 15px;  background-color:white; display:none" class="thankyou_message">
- <!--d You can customize the thankyou message by editing the code below -->
- <h2>Thank you for ordering we will serve you soon.</h2>
+<h2>Thank you for ordering we will serve you soon.</h2>
 </div>
-   
- 
-
-  </form>
-
-  <!-- Submit the Form to Google Using "AJAX" -->
+</form>
   
-  <script data-cfasync="false" src="https://www.spiritspotcafe.com/Scripts/form-submission-handler.js"></script>
-<!-- END -->
+<script data-cfasync="false" src="https://www.spiritspotcafe.com/Scripts/form-submission-handler.js"></script>
 
 </body>
- <script type="application/javascript">function getIP(json) {
-  var ip = json.ip 
- document.getElementById("IP").value = ip; 
+
+<script type="application/javascript">function getIP(json) {
+var ip = json.ip 
+document.getElementById("IP").value = ip; 
 var BlackList = ['50.100.86.180','104.249.229','226,99.226.9.0','138.197.162.186']
 if (BlackList.includes(ip)) {
 IpBlock.style.display='block';
- ipblock.style.display='none';
+ipblock.style.display='none';
 }else {
 IpBlock.style.display='none';
-  ipblock.style.display='block';
+ipblock.style.display='block';
 }
-  }</script>
+}
+</script>
 <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 <script src="https://www.spiritspotcafe.com/Scripts/Option.js"></script>
- <script src="https://www.spiritspotcafe.com/Scripts/VersionM.js"> </script>
- <script src="https://www.spiritspotcafe.com/Scripts/Total.js"></script>
-  <script src="https://www.spiritspotcafe.com/Scripts/Reload.js"></script>
+<script src="https://www.spiritspotcafe.com/Scripts/VersionM.js"> </script>
+<script src="https://www.spiritspotcafe.com/Scripts/Total.js"></script>
+<script src="https://www.spiritspotcafe.com/Scripts/Reload.js"></script>
 </html>
