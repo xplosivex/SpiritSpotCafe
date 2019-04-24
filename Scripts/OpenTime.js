@@ -3,11 +3,13 @@ function OpenTime () {
   var myDate = new Date();
   var hours = myDate.getHours();
  
-    if (hours > 6 || hours < 10) {
+    if ( hours > 6) {
+      if (hours < 10){
     document.getElementById("NotTime").style.display = "block"
      document.getElementById("NoOrderTime").style.display = "none" 
      document.getElementById("YesOrderTime").style.display = "block" 
-    } else {
+      }
+      } else {
       document.getElementById("NotTime").style.display = "none"
      document.getElementById("NoOrderTime").style.display = "block" 
      document.getElementById("YesOrderTime").style.display = "none" 
