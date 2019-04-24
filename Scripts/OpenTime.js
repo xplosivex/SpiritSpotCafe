@@ -2,7 +2,7 @@ setInterval(OpenTime,0)
 function OpenTime () {
   var myDate = new Date();
   var hours = myDate.getHours();
-   var OpenHours = [12103];
+   var OpenHours = ["DDD"];
   var HTrue = OpenHours.includes(hours)
     if (HTrue = true) {
     document.getElementById("NotTime").style.display = "block"
