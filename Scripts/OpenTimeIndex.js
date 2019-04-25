@@ -5,8 +5,8 @@ function OpenTimeIn () {
    var minute = now.getMinutes();
    var second = now.getSeconds();
     var daysM = now.getDay();
-   var ap = "AM";
-   if (hour   > 11) { ap = "PM";             }
+   var ap = "PM";
+   if (hour   > 11) { ap = "AM";             }
    if (hour   > 12) { hour = hour - 12;      }
    if (hour   == 0) { hour = 12;             }
    if (hour   < 10) { hour   = hour;   }
