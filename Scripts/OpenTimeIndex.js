@@ -16,7 +16,6 @@ function OpenTimeIn () {
 if (daysM == 0 || daysM == 6){
  var Hours = "Orders Will Open On Monday"  
 } else {
-
 if(ap == "AM") {
 
   document.getElementById("demo").innerHTML = timeString;
@@ -61,7 +60,7 @@ case 3:
 
 }
 
-}
+
 if(ap == "PM"){
 switch(hour) {
  case 1:
@@ -104,7 +103,7 @@ switch(hour) {
 
   console.log(Hours)
 
-}}
-document.getElementById("OpenClose").innerHTML = Hours;
 }
+document.getElementById("OpenClose").innerHTML = Hours;
+}}
 OpenTimeIn()
