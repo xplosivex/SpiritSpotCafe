@@ -4,6 +4,7 @@ function OpenTimeIn () {
    var hour   = now.getHours();
    var minute = now.getMinutes();
    var second = now.getSeconds();
+    var daysM = now.getDays();
    var ap = "AM";
    if (hour   > 11) { ap = "PM";             }
    if (hour   > 12) { hour = hour - 12;      }
@@ -12,6 +13,10 @@ function OpenTimeIn () {
    if (minute < 10) { minute =  minute; }
    if (second < 10) { second = + second; }
    var timeString = hour  + ":"  + minute + " " + ap
+if (daysM == 0 || daysM == 6){
+ var Hours = "Orders Will Open On Monday"  
+} else {
+
 if(ap == "AM") {
 switch(hour){
   case 1:
@@ -96,7 +101,7 @@ switch(hour) {
 }
   console.log(Hours)
 
-}
+}}
 document.getElementById("OpenClose").innerHTML = Hours;
 }
 OpenTimeIn()
