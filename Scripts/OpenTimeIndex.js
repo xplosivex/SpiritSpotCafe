@@ -18,27 +18,30 @@ if (daysM == 0 || daysM == 6){
 } else {
 
 if(ap == "AM") {
+
+  document.getElementById("demo").innerHTML = timeString;
+if(ap == "AM") {
 switch(hour){
   case 1:
-    var Hours = "6 Hours Until Open"
+    var Hours = "2 Hours Until Orders Close"
     break;
      case 2:
-    var Hours = "5 Hours Until Open"
+    var Hours = "1 Hours Until Orders Close"
     break;
 case 3:
-    var Hours = "4 Hours Until Orders  Open"
+    var Hours = "0 Hours Until Orders Close"
     break;
  case 4:
-    var Hours = "3 Hours Until Orders  Open"
+    var Hours = "14 Hours Until Orders  Open"
     break; 
   case 5:
-    var Hours = "2 Hours Until Orders  Open"
+    var Hours = " Hours Until Orders  Open"
     break;  
     case 6:
     var Hours = "1 Hours Until Orders  Open"
     break;
     case 7:
-    var Hours = "0 Hours Until Orders Open"
+    var Hours = "8 Hours Until Orders Open"
     break;
     case 8:
     var Hours = "7 Hours Until Orders Close"
@@ -53,11 +56,11 @@ case 3:
     var Hours = "4 Hours Until Orders Close"
     break;
     case 12:
-    var Hours = "3 Hours Until Orders Close"
+   var Hours = "3 Hours Until Orders Close"
     break;
 
 }
-console.log(Hours)
+
 }
 if(ap == "PM"){
 switch(hour) {
@@ -83,7 +86,7 @@ switch(hour) {
     var Hours = "12 Hours Until Orders Open"
     break;
     case 8:
-    var Hours = "11 Hours Until Orders Open"
+    var Hours = "11 Hours Until Orders  Open"
     break;
     case 9:
     var Hours = "10 Hours Until Orders Open"
