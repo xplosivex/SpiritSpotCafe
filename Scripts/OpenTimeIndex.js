@@ -101,7 +101,7 @@ switch(hour) {
     var Hours = "7 Hours Until Orders Open"
     break;
     
-}
+
   console.log(Hours)
 
 }}
