@@ -12,6 +12,7 @@ function OpenTimeIn () {
    if (hour   < 10) { hour   = hour;   }
    if (minute < 10) { minute =  minute; }
    if (second < 10) { second = + second; }
+  var Minutes = minute - 60
    var timeString = hour  + ":"  + minute + " " + ap
 if (daysM == 0 || daysM == 6){
  var Hours = "Orders Will Open On Monday"  
@@ -20,40 +21,40 @@ if (daysM == 0 || daysM == 6){
 if(ap == "AM") {
 switch(hour){
   case 1:
-    var Hours = "2 Hours Until Orders Close"
+    var Hours = "1 Hour " + Minutes + " Minutes Until Orders Close" 
     break;
      case 2:
-    var Hours = "1 Hours Until Orders Close"
+    var Hours =   Minutes + " Minutes Until Orders Close" 
     break;
 case 3:
-    var Hours = "0 Hours Until Orders Close"
+    var Hours = "15 Hours " + Minutes + " Minutes Until Orders Open" 
     break;
  case 4:
-    var Hours = "14 Hours Until Orders  Open"
+    var Hours = "14 Hours " + Minutes + " Minutes Until Orders Open" 
     break; 
   case 5:
-    var Hours = " Hours Until Orders  Open"
+    var Hours = "13 Hours " + Minutes + " Minutes Until Orders Open" 
     break;  
     case 6:
-    var Hours = "1 Hours Until Orders  Open"
+    var Hours = "12 Hours " + Minutes + " Minutes Until Orders Open" 
     break;
     case 7:
-    var Hours = "8 Hours Until Orders Open"
+    var Hours = "11 Hours " + Minutes + " Minutes Until Orders Open" 
     break;
     case 8:
-    var Hours = "7 Hours Until Orders Close"
+    var Hours = "10 Hours " + Minutes + " Minutes Until Orders Open" 
     break;
     case 9:
-    var Hours = "6 Hours Until Orders Close"
+    var Hours = "9 Hours " + Minutes + " Minutes Until Orders Open" 
     break;
     case 10:
-    var Hours = "5 Hours Until Orders Close"
+    var Hours = "8 Hours " + Minutes + " Minutes Until Orders Open" 
     break;
     case 11:
-    var Hours = "4 Hours Until Orders Close"
+    var Hours = "7 Hours " + Minutes + " Minutes Until Orders Open" 
     break;
     case 12:
-   var Hours = "3 Hours Until Orders Close"
+   var Hours = "6 Hours " + Minutes + " Minutes Until Orders Open" 
     break;
 
 }
@@ -62,40 +63,40 @@ case 3:
 if(ap == "PM"){
 switch(hour) {
  case 1:
-    var Hours = "2 Hours Until Orders Close"
+    var Hours = "5 Hours " + Minutes + " Minutes Until Orders Open" 
     break;   
  case 2:
-    var Hours = "1 Hours Until Orders Close "
+    var Hours = "4 Hours " + Minutes + " Minutes Until Orders Open" 
     break;  
  case 3:
-    var Hours = "0 Hours Until Orders Close"
+    var Hours = "3 Hours " + Minutes + " Minutes Until Orders Open" 
     break;   
  case 4:
-    var Hours = "15 Hours Until Orders Open"
+    var Hours = "2 Hours " + Minutes + " Minutes Until Orders Open" 
     break;  
     case 5:
-    var Hours = "14 Hours Until Orders Open"
+    var Hours = "1 Hours " + Minutes + " Minutes Until Orders Open" 
     break;
     case 6:
-    var Hours = "13 Hours Until Orders Open"
+    var Hours =  Minutes + " Minutes Until Orders Open" 
     break;
     case 7:
-    var Hours = "12 Hours Until Orders Open"
+    var Hours = "7 Hours " + Minutes + " Minutes Until Orders Close" 
     break;
     case 8:
-    var Hours = "11 Hours Until Orders  Open"
+    var Hours = "6 Hours " + Minutes + " Minutes Until Orders Close" 
     break;
     case 9:
-    var Hours = "10 Hours Until Orders Open"
+    var Hours = "5 Hours " + Minutes + " Minutes Until Orders Close" 
     break;
     case 10:
-    var Hours = "9 Hours Until Orders Open"
+    var Hours = "4 Hours " + Minutes + " Minutes Until Orders Close" 
     break;
      case 11:
-    var Hours = "8 Hours Until Orders Open"
+    var Hours = "3 Hours " + Minutes + " Minutes Until Orders Close" 
     break;
      case 12:
-    var Hours = "7 Hours Until Orders Open"
+    var Hours = "2 Hours " + Minutes + " Minutes Until Orders Close" 
     break;
     
 
