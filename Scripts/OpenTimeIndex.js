@@ -1,7 +1,7 @@
-setInterval(OpenTime,0)
+setInterval(OpenTime,30000)
 function OpenTime () {
 var myDate = new Date();
-var hours = myDate.getHours()
+var hours = 19
 var days = myDate.getDay() 
 var minutes = myDate.getMinutes()
 if (days == 0 || days == 6){
@@ -14,7 +14,7 @@ if ( hours > 6) {
   if (hours < 15){
 document.getElementById("TimeUntil").innerHTML = 15 - hours;
 } else {
-document.getElementById("TimeUntil").innerHTML = 15 - hours ;
+document.getElementById("TimeUntil").innerHTML = hours - 15 ;
 }
 }
 }
