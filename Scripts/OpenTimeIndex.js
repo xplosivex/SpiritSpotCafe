@@ -59,7 +59,7 @@ case 3:
 }
 console.log(Hours)
 }
-if(ap == "PM")){
+if(ap == "PM"){
 switch(hour) {
  case 1:
     var Hours = "2 Hours Until Orders Close"
