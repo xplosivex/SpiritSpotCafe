@@ -1,7 +1,7 @@
 setInterval(OpenTime,0)
 function OpenTime () {
 var myDate = new Date();
-var days = myDate.getHours()
+var hours = myDate.getHours()
 var days = myDate.getDay() 
 var minutes = myDate.getMinutes()
 if (days == 0 || days == 6){
