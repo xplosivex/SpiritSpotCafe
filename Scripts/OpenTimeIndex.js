@@ -11,8 +11,12 @@ function OpenTimeIn () {
    if (hour   == 0) { hour = 12;             }
    if (hour   < 10) { hour   = hour;   }
    if (minute < 10) { minute =  minute; }
-   if (second < 10) { second = + second; }
+   if (second < 10) { second = second; }
+ 
   var Minutes = minute - 60
+  if (Math.sign(Minutes) == -1){
+   Minutes = Minutes * -1  
+  }
    var timeString = hour  + ":"  + minute + " " + ap
 if (daysM == 0 || daysM == 6){
  var Hours = "Orders Will Open On Monday"  
