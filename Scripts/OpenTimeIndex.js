@@ -1,27 +1,7 @@
-setInterval(OpenTime,30000)
-function OpenTime () {
-var myDate = new Date();
-var hours = 19
-var days = myDate.getDay() 
-var minutes = myDate.getMinutes()
-if (days == 0 || days == 6){
-var x = 16
-var  y = 13
-
-
-} else {
-if ( hours > 6) {
-  if (hours < 15){
-document.getElementById("TimeUntil").innerHTML = 15 - hours;
-} else {
-document.getElementById("TimeUntil").innerHTML = hours - 15 ;
-}
-}
-}
-}
-
+setInterval(OpenTimeIn,30000)
+function OpenTimeIn () {
    var now    = new Date();
-   var hour   = 23
+   var hour   = now.getHours();
    var minute = now.getMinutes();
    var second = now.getSeconds();
    var ap = "AM";
@@ -118,3 +98,6 @@ switch(hour) {
   console.log(Hours)
 
 }
+document.getElementById("OpenClose").innerHTML = Hours;
+}
+OpenTimeIn()
