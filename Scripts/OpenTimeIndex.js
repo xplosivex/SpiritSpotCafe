@@ -59,7 +59,7 @@ case 3:
     break;
 
 }
-
+}
 
 if(ap == "PM"){
 switch(hour) {
@@ -103,7 +103,7 @@ switch(hour) {
 
   console.log(Hours)
 
-}
+}}
 document.getElementById("OpenClose").innerHTML = Hours;
 }}
 OpenTimeIn()
