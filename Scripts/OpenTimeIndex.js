@@ -12,7 +12,6 @@ function OpenTimeIn () {
    if (minute < 10) { minute =  minute; }
    if (second < 10) { second = + second; }
    var timeString = hour  + ":"  + minute + " " + ap
-
 if(ap == "AM") {
 switch(hour){
   case 1:
