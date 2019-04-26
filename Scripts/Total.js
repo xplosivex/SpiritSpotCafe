@@ -3,6 +3,12 @@ setInterval(Total,0)
     var here = document.getElementById("Type").value 
  if ( here == "Hot Caramel"  || here == "Hot Vanilla" || here == "Iced Caramel" || here  == "Iced Vanilla"  ) {
   var AT = 2
+  var TOPA = document.getElementById("ToppingsA").value
+  var TOPB = document.getElementById("ToppingsB").value 
+  var TOPC = document.getElementById("ToppingsC").value 
+  var TOPD = document.getElementById("ToppingsD").value 
+var Nop = TOPA + " " + TOPB + " " TOPC + " " + TOPD 
+  document.getElementById("ToppingsE").value  = Nop;
   document.getElementById("ToppingsE").value  = ""
   } else if  ( here == "Smoothie" ) {
    var AT = 0
