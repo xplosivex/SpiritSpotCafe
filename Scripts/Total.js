@@ -7,9 +7,8 @@ setInterval(Total,0)
   var TOPB = document.getElementById("ToppingsB").value 
   var TOPC = document.getElementById("ToppingsC").value 
   var TOPD = document.getElementById("ToppingsD").value 
-var Nop = TOPA + " " + TOPB + " " TOPC + " " + TOPD 
+var Nop = TOPA + " " + TOPB + " " + TOPC + " " + TOPD 
   document.getElementById("ToppingsE").value  = Nop;
-  document.getElementById("ToppingsE").value  = ""
   } else if  ( here == "Smoothie" ) {
    var AT = 0
    var Topp = document.getElementById("ToppingsJ").value 
