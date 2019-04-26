@@ -12,8 +12,12 @@ function OpenTimeIn () {
    if (hour   < 10) { hour   = hour;   }
    if (minute < 10) { minute =  minute; }
    if (second < 10) { second = second; }
- 
-  var Minutes = minute - 60
+   var Minutes = minute - 60
+if (Minutes == 60) {
+ hour = hour + 1
+  var Minutes = 0
+} else {
+  
   if (Math.sign(Minutes) == -1){
    Minutes = Minutes * -1  
   }
@@ -107,5 +111,5 @@ switch(hour) {
 }
 }
   document.getElementById("OpenClose").innerHTML = Hours;
-}}
+}}}
 OpenTimeIn()
