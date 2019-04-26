@@ -14,7 +14,7 @@ function OpenTimeIn () {
    if (second < 10) { second = second; }
    var Minutes = minute - 60
 if (Minutes == 60) {
- Minutes = 0
+ Minutes = 59
 } else {
   
   if (Math.sign(Minutes) == -1){
