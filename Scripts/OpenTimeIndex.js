@@ -2,7 +2,7 @@ setInterval(OpenTimeIn,30000)
 function OpenTimeIn () {
    var now    = new Date();
    var hour   = now.getHours();
-   var minute = now.getMinutes();
+   var minute = 0
    var second = now.getSeconds();
     var daysM = now.getDay();
    var ap = "PM";
