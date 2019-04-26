@@ -2,8 +2,6 @@ function change(){
 var here = document.getElementById("Type").value 
  if ( here == "Hot Caramel"  || here == "Hot Vanilla" || here == "Iced Caramel" || here  == "Iced Vanilla"  ) {
     hiddenDiv.style.display='block';
-   
-   
   hiddenDiv3.style.display='none';
     } 
     else if ( here == "Hot Chocolate" || here == "None"  ){
@@ -13,7 +11,7 @@ var here = document.getElementById("Type").value
       
     }  else if ( here == "Smoothie" ) {
      hiddenDiv3.style.display='block';
-    Form.fileURL.focus();
+ 
      hiddenDiv.style.display='none';
     
     }
