@@ -20,7 +20,9 @@
         <a class="pure-menu-heading" href="index.html">Spirit Spot Cafe</a>
 
         <ul class="pure-menu-list">
-            <li class="pure-menu-item"<a href="" class="pure-menu-link">Contact</a></li>
+            <li class="pure-menu-item">
+                
+          <li class="pure-menu-item"><a href="contact.html" class="pure-menu-link">Contact</a></li>
             <li class="pure-menu-item"><a href="menu.html" class="pure-menu-link">Menu</a></li>
             <li class="pure-menu-item"><a href="order.html" class="pure-menu-link">Order</a></li>
         </ul>
@@ -38,12 +40,12 @@
 <!-- change the form action to your script url -->
 <div id="IpBlock" style="border:black double 8px; display:none; border-radius: 15px; background-color:white;"><p> You have been blocked from ordering.</p>   </div>
 <div id="ipblock" class="form-elements " style=" float:left; width:100%; height:1000; background:url("https://xplosivex.github.io/SpiritSpotCafe/Images/Background.jpg");">
-
-<fieldset class="pure-group" style="padding-top:15%; border:black double 8px; border-radius: 15px; background-color:white;">
+<div style="padding-top:15%;">
+<fieldset class="pure-group" style=" border:black double 8px; border-radius: 15px; background-color:white;">
 <label for="Name">Name:</label><br>
      <input  required id="Name"  class="pure-input-rounded" name="Name"  /> 
 </fieldset>
-     
+     </div>
 <fieldset class="pure-group" style="border:black double 8px; border-radius: 15px; background-color:white;">
 <label for="Type">Type Of Drink:</label><br>   
 <select id="Type" name="Type" onchange="change()">
