@@ -96,7 +96,8 @@ a.pure-button-primary {
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
 }
 .home-menu {
-    background: #2d3e50;
+    background: #000000;
+    #ff7621
 }
 .pure-menu.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
@@ -116,13 +117,13 @@ a.pure-button-primary {
 }
 
 .home-menu a {
-    color: #6FBEF3;
+    color: #ff7621;
 }
 .home-menu li a:hover,
 .home-menu li a:focus {
     background: none;
     border: none;
-    color: #AECFE5;
+    color: #ff7621;
 }
 
 
@@ -132,7 +133,7 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    background: #1f8dd6;
+    background: #ff7621;
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -145,7 +146,7 @@ a.pure-button-primary {
 
 .splash {
     /* absolute center .splash within .splash-container */
-    width: 80%;
+    width: 85%;
     height: 50%;
     margin: auto;
     position: absolute;
@@ -156,10 +157,10 @@ a.pure-button-primary {
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
-    color: white;
-    border: 3px solid white;
+    color: black;
+    border: 3px solid black;
     padding: 1em 1.6em;
     font-weight: 100;
     border-radius: 5px;
@@ -168,7 +169,7 @@ a.pure-button-primary {
 
 /* This is the subheading that appears on the blue section */
 .splash-subhead {
-    color: white;
+    color: black;
     letter-spacing: 0.05em;
     opacity: 0.8;
 }
@@ -184,7 +185,7 @@ a.pure-button-primary {
     width: 100%;
     min-height: 12%;
     z-index: 2;
-    background: white;
+    background: black;
 
 }
 
