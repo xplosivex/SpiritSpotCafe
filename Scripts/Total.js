@@ -495,10 +495,7 @@ var ExtraRep = ExtraS.replace(/ 0 /g, '')
 
  
      function Save() {
-         var AAQ = document.getElementById("AQ").value
-var BBQ = document.getElementById("BQ").value
-var CCQ = document.getElementById("CQ").value
-var DDQ = document.getElementById("DQ").value
+
 var EEQ = document.getElementById("EQ").value
 var FFQ = document.getElementById("FQ").value
 var GGQ = document.getElementById("GQ").value
@@ -517,10 +514,10 @@ var SSQ = document.getElementById("SQ").value
 var TTQ = document.getElementById("TQ").value
      var TYPE = document.getElementById("Type").value
 store.set('drink', { drink:TYPE})
-store.set('Snack', { one:AAQ})
-store.set('Snack', { two:BBQ})
-store.set('Snack', { three:CCQ})
-store.set('Snack', { four:DDQ})
-     document.getElementById("result").innerHTML =  store.get('drink').drink + store.get('Snack').one +  store.get('Snack').two  
+store.set('Snack', { one: document.getElementById("AQ").value })
+store.set('Snack', { two: document.getElementById("BQ").value })
+store.set('Snack', { three: document.getElementById("CQ").value })
+store.set('Snack', { four: document.getElementById("DQ").value })
+     document.getElementById("result").innerHTML =  store.get('Snack').one 
                         }
                         
