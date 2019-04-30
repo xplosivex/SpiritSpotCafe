@@ -40,28 +40,38 @@ var Nop = TOPA + " " + TOPB + " " + TOPC + " " + TOPD
     document.getElementById("ToppingsE").value  = Topp 
    var FFF = "NDD"
    }
+Save();
+  function Save() {
+AAQ = document.getElementById("AQ").value
+BBQ = document.getElementById("BQ").value
+CCQ = document.getElementById("CQ").value
+DDQ = document.getElementById("DQ").value
+EEQ = document.getElementById("EQ").value
+FFQ = document.getElementById("FQ").value
+GGQ = document.getElementById("GQ").value
+HHQ = document.getElementById("HQ").value
+IIQ = document.getElementById("IQ").value
+JJQ = document.getElementById("JQ").value
+KKQ = document.getElementById("KQ").value
+LLQ = document.getElementById("LQ").value
+MMQ = document.getElementById("MQ").value
+NNQ = document.getElementById("NQ").value
+OOQ = document.getElementById("OQ").value
+PPQ = document.getElementById("PQ").value
+QQQ = document.getElementById("QQ").value
+RRQ = document.getElementById("RQ").value
+SSQ = document.getElementById("SQ").value
+TTQ = document.getElementById("TQ").value
+     var TYPE = document.getElementById("Type").value
+store.set('drink', { drink:TYPE})
+store.set('Snack', { one: AAQ })
+store.set('Snack', { two: BBQ })
+store.set('Snack', { three: CCQ })
+store.set('Snack', { four: DDQ })
+     document.getElementById("result").innerHTML =  store.get('Snack').one 
+                        }
+                        
 
-
- var AAQ = document.getElementById("AQ").value
-var BBQ = document.getElementById("BQ").value
-var CCQ = document.getElementById("CQ").value
-var DDQ = document.getElementById("DQ").value
-var EEQ = document.getElementById("EQ").value
-var FFQ = document.getElementById("FQ").value
-var GGQ = document.getElementById("GQ").value
-var HHQ = document.getElementById("HQ").value
-var IIQ = document.getElementById("IQ").value
-var JJQ = document.getElementById("JQ").value
-var KKQ = document.getElementById("KQ").value
-var LLQ = document.getElementById("LQ").value
-var MMQ = document.getElementById("MQ").value
-var NNQ = document.getElementById("NQ").value
-var OOQ = document.getElementById("OQ").value
-var PPQ = document.getElementById("PQ").value
-var QQQ = document.getElementById("QQ").value
-var RRQ = document.getElementById("RQ").value
-var SSQ = document.getElementById("SQ").value
-var TTQ = document.getElementById("TQ").value
 switch(AAQ) {
 case "0":
    var AE = 0  
@@ -494,30 +504,4 @@ var ExtraRep = ExtraS.replace(/ 0 /g, '')
 
 
  
-     function Save() {
-
-var EEQ = document.getElementById("EQ").value
-var FFQ = document.getElementById("FQ").value
-var GGQ = document.getElementById("GQ").value
-var HHQ = document.getElementById("HQ").value
-var IIQ = document.getElementById("IQ").value
-var JJQ = document.getElementById("JQ").value
-var KKQ = document.getElementById("KQ").value
-var LLQ = document.getElementById("LQ").value
-var MMQ = document.getElementById("MQ").value
-var NNQ = document.getElementById("NQ").value
-var OOQ = document.getElementById("OQ").value
-var PPQ = document.getElementById("PQ").value
-var QQQ = document.getElementById("QQ").value
-var RRQ = document.getElementById("RQ").value
-var SSQ = document.getElementById("SQ").value
-var TTQ = document.getElementById("TQ").value
-     var TYPE = document.getElementById("Type").value
-store.set('drink', { drink:TYPE})
-store.set('Snack', { one: document.getElementById("AQ").value })
-store.set('Snack', { two: document.getElementById("BQ").value })
-store.set('Snack', { three: document.getElementById("CQ").value })
-store.set('Snack', { four: document.getElementById("DQ").value })
-     document.getElementById("result").innerHTML =  store.get('Snack').one 
-                        }
-                        
+   
