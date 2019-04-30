@@ -502,7 +502,7 @@ store.set('Snack', { one: AAQ })
 store.set('Snack', { two: BBQ })
 store.set('Snack', { three: CCQ })
 store.set('Snack', { four: DDQ })
-     document.getElementById("result").innerHTML =  store.get('drink').TYPE 
+     document.getElementById("result").innerHTML =  store.get('drink').drink 
                         }
                         
    
