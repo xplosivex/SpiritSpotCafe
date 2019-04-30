@@ -498,7 +498,7 @@ var ExtraRep = ExtraS.replace(/ 0 /g, '')
 
      var TYPE = document.getElementById("Type").value
 store.set('drink', { drink:TYPE})
-store.set('Snack', { one:AAQJ})
+store.set('Snack', { one:AAQ})
 store.set('Snack', { two:BBQ})
 store.set('Snack', { three:CCQ})
 store.set('Snack', { four:DDQ})
