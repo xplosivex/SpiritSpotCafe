@@ -499,10 +499,10 @@ SSQ = document.getElementById("SQ").value
 TTQ = document.getElementById("TQ").value
      var TYPE = document.getElementById("Type").value
 store.set('drink', { drink:TYPE})
-store.set('Snack', { one: AAQJ })
-store.set('Snack', { two: BBQ })
-store.set('Snack', { three: CCQ })
-store.set('Snack', { four: DDQ })
+store.set('Snack', { one:AAQJ})
+store.set('Snack', { two:BBQ})
+store.set('Snack', { three:CCQ})
+store.set('Snack', { four:DDQ})
      document.getElementById("result").innerHTML =  store.get('Snack').one
                         }
                         
