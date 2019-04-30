@@ -1,14 +1,26 @@
-var myIndex = 0;
-carousel();
 
+carousel();
+var I = 0;
+setInterval(carousel,1500)
 function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 3500); // Change image every 2 seconds
+if (I > 2) {
+I = 0
+} else {
+I++
+}
+switch(I) {
+case 0:
+var B = "zero";
+break;
+case 1:
+var B = "one";
+break;
+case 2:
+var B = "two";
+break;
+case 3:
+var B = "three";
+break;
+}
+document.getElementById("Rotate").className = B; 
 }
