@@ -30,10 +30,10 @@
 </header>
      
 <body onload="OpenTime()" style="margin:0; font-size: 15px; padding-top: 40px;" background="https://xplosivex.github.io/SpiritSpotCafe/Images/Background.jpg">
-     <button type="button" onclick="Save()">Save Order</button>
+     
 <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
 <!-- START HERE -->
-     <div id="result" style="border:black double 8px; display:none; border-radius: 15px; background-color:white;" > </div>
+    
 <div id="OpenClose" style="border:black double 8px;  border-radius: 15px; background-color:white;"><p> Orders Are Currently Not Being Accepted</p>   </div>
 
 <form id="NotTime"  class="gform pure-form pure-form-stacked" method="POST" action="https://script.google.com/macros/s/AKfycbw9mN1c_CT51vCimuvCqUCBBbu1Xq9m3p_qAVukov-B0gmn9t8/exec" style="display:none;">
@@ -472,10 +472,12 @@
 <h2>Thank you for ordering we will serve you soon.</h2>
 </div>
 </form>
-  
+   <button type="button" onclick="Save()">Save Order</button>
+     <div id="result" style="border:black double 8px; display:none; border-radius: 15px; background-color:white;" > </div>
 <script data-cfasync="false" src="https://www.spiritspotcafe.com/Scripts/form-submission-handler.js"></script>
 <script src="https://www.spiritspotcafe.com/Scripts/store.everything.min.js"></script>
-</body>
+<script src="https://www.spiritspotcafe.com/Scripts/Total.js"></script>
+ </body>
     
 
 <script type="application/javascript" src="https://www.spiritspotcafe.com/Scripts/local-storage.js">
@@ -497,6 +499,6 @@ ipblock.style.display='block';
 <script src="https://www.spiritspotcafe.com/Scripts/Option.js"></script>
 <script src="https://www.spiritspotcafe.com/Scripts/VersionM.js"> </script>
 <script src="https://www.spiritspotcafe.com/Scripts/VersionN.js"> </script>
-<script src="https://www.spiritspotcafe.com/Scripts/Total.js"></script>
+
 <script src="https://www.spiritspotcafe.com/Scripts/Reload.js"></script>
 </html>
