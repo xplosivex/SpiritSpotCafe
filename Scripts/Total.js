@@ -495,6 +495,26 @@ var ExtraRep = ExtraS.replace(/ 0 /g, '')
 
  
      function Save() {
+         var AAQ = document.getElementById("AQ").value
+var BBQ = document.getElementById("BQ").value
+var CCQ = document.getElementById("CQ").value
+var DDQ = document.getElementById("DQ").value
+var EEQ = document.getElementById("EQ").value
+var FFQ = document.getElementById("FQ").value
+var GGQ = document.getElementById("GQ").value
+var HHQ = document.getElementById("HQ").value
+var IIQ = document.getElementById("IQ").value
+var JJQ = document.getElementById("JQ").value
+var KKQ = document.getElementById("KQ").value
+var LLQ = document.getElementById("LQ").value
+var MMQ = document.getElementById("MQ").value
+var NNQ = document.getElementById("NQ").value
+var OOQ = document.getElementById("OQ").value
+var PPQ = document.getElementById("PQ").value
+var QQQ = document.getElementById("QQ").value
+var RRQ = document.getElementById("RQ").value
+var SSQ = document.getElementById("SQ").value
+var TTQ = document.getElementById("TQ").value
      var TYPE = document.getElementById("Type").value
 store.set('drink', { drink:TYPE})
 store.set('Snack', { one:AAQ})
