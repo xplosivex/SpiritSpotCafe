@@ -476,6 +476,11 @@
 <script data-cfasync="false" src="https://www.spiritspotcafe.com/Scripts/form-submission-handler.js"></script>
 
 </body>
+     <script>
+          var ls = require('local-storage')
+          ls('key','value')
+          document.getElementById("result").innerHTML =  ls('key');
+     </script>
 <script type="application/javascript" src="https://www.spiritspotcafe.com/Scripts/local-storage.js">
      </script>
 <script type="application/javascript">function getIP(json) {
