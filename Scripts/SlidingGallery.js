@@ -1,5 +1,5 @@
 
-carousel();
+setTimeout(carousel,0)
 var I = 0;
 setInterval(carousel,1500)
 function carousel() {
