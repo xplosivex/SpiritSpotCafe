@@ -1,5 +1,5 @@
 setInterval(Total,0)
-Save();
+Total();
    function Total(){
     var here = document.getElementById("Type").value 
  if ( here == "Hot Caramel"  || here == "Hot Vanilla" || here == "Iced Caramel" || here  == "Iced Vanilla"  ) {
@@ -42,7 +42,26 @@ var Nop = TOPA + " " + TOPB + " " + TOPC + " " + TOPD
    var FFF = "NDD"
    }
 
- 
+ AAQ = document.getElementById("AQ").value
+BBQ = document.getElementById("BQ").value
+CCQ = document.getElementById("CQ").value
+DDQ = document.getElementById("DQ").value
+EEQ = document.getElementById("EQ").value
+FFQ = document.getElementById("FQ").value
+GGQ = document.getElementById("GQ").value
+HHQ = document.getElementById("HQ").value
+IIQ = document.getElementById("IQ").value
+JJQ = document.getElementById("JQ").value
+KKQ = document.getElementById("KQ").value
+LLQ = document.getElementById("LQ").value
+MMQ = document.getElementById("MQ").value
+NNQ = document.getElementById("NQ").value
+OOQ = document.getElementById("OQ").value
+PPQ = document.getElementById("PQ").value
+QQQ = document.getElementById("QQ").value
+RRQ = document.getElementById("RQ").value
+SSQ = document.getElementById("SQ").value
+TTQ = document.getElementById("TQ").value
 
 switch(AAQ) {
 case "0":
@@ -476,27 +495,7 @@ var ExtraRep = ExtraS.replace(/ 0 /g, '')
 
 
   function Save() {
-AAQ = document.getElementById("AQ").value
-var AAQJ = document.getElementById("AQ").value
-BBQ = document.getElementById("BQ").value
-CCQ = document.getElementById("CQ").value
-DDQ = document.getElementById("DQ").value
-EEQ = document.getElementById("EQ").value
-FFQ = document.getElementById("FQ").value
-GGQ = document.getElementById("GQ").value
-HHQ = document.getElementById("HQ").value
-IIQ = document.getElementById("IQ").value
-JJQ = document.getElementById("JQ").value
-KKQ = document.getElementById("KQ").value
-LLQ = document.getElementById("LQ").value
-MMQ = document.getElementById("MQ").value
-NNQ = document.getElementById("NQ").value
-OOQ = document.getElementById("OQ").value
-PPQ = document.getElementById("PQ").value
-QQQ = document.getElementById("QQ").value
-RRQ = document.getElementById("RQ").value
-SSQ = document.getElementById("SQ").value
-TTQ = document.getElementById("TQ").value
+
      var TYPE = document.getElementById("Type").value
 store.set('drink', { drink:TYPE})
 store.set('Snack', { one:AAQJ})
