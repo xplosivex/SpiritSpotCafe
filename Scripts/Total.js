@@ -493,3 +493,11 @@ var ExtraRep = ExtraS.replace(/ 0 /g, '')
 }
 
 
+ 
+     function Save() {
+     var TYPE = document.getElementById("Type").value
+store.set('drink', { drink: TYPE  })
+     store.set('drink', { drink:   })
+     document.getElementById("result").innerHTML =  store.get('drink').drink 
+                        }
+                        
