@@ -493,7 +493,8 @@ var ExtraRep = ExtraS.replace(/ 0 /g, '')
 }
 
  function save() {
- localStorage.setitem("Drink", here);
+    var TYPE = document.getElementById("Type").value 
+ localStorage.setitem("Drink", TYPE);
  localStorage.setitem("Snack1Value", AE);
  localStorage.setitem("Snack2Value", BE);
  localStorage.setitem("Snack3Value", CE);
@@ -516,5 +517,5 @@ var ExtraRep = ExtraS.replace(/ 0 /g, '')
  localStorage.setitem("Snack20Value", TE);
  var DrinkSet = localStorage.getItem("Drink");
  var SnackSet1 = localStorage.getItem("Snack1Value");
-   document.getElementById("result").innerHTML = SnackSet1 DrinkSet;
+   document.getElementById("result").innerHTML = DrinkSet;
  }
