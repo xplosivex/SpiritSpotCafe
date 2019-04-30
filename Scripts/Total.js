@@ -477,6 +477,7 @@ var ExtraRep = ExtraS.replace(/ 0 /g, '')
 
   function Save() {
 AAQ = document.getElementById("AQ").value
+var AAQJ = document.getElementById("AQ").value
 BBQ = document.getElementById("BQ").value
 CCQ = document.getElementById("CQ").value
 DDQ = document.getElementById("DQ").value
@@ -498,11 +499,11 @@ SSQ = document.getElementById("SQ").value
 TTQ = document.getElementById("TQ").value
      var TYPE = document.getElementById("Type").value
 store.set('drink', { drink:TYPE})
-store.set('Snack', { one: AAQ })
+store.set('Snack', { one: AAQJ })
 store.set('Snack', { two: BBQ })
 store.set('Snack', { three: CCQ })
 store.set('Snack', { four: DDQ })
-     document.getElementById("result").innerHTML =  store.get('drink').drink 
+     document.getElementById("result").innerHTML =  store.get('Snack').one
                         }
                         
    
