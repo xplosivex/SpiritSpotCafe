@@ -497,10 +497,10 @@ var ExtraRep = ExtraS.replace(/ 0 /g, '')
      function Save() {
      var TYPE = document.getElementById("Type").value
 store.set('drink', { drink:TYPE})
-store.set('Snack', { one:AE})
-store.set('Snack', { two:BE})
-store.set('Snack', { three:CE})
-store.set('Snack', { four:DE})
+store.set('Snack', { one:AAQ})
+store.set('Snack', { two:BBQ})
+store.set('Snack', { three:CCQ})
+store.set('Snack', { four:DDQ})
      document.getElementById("result").innerHTML =  store.get('drink').drink + store.get('Snack').one +  store.get('Snack').two  
                         }
                         
