@@ -476,10 +476,12 @@
 <script data-cfasync="false" src="https://www.spiritspotcafe.com/Scripts/form-submission-handler.js"></script>
 
 </body>
-     <script>
-          ls('key','value')
-          document.getElementById("result").innerHTML =  ls('key');
-     </script>
+    <script src="https://www.spiritspotcafe.com/Scripts/store.everything.min.js"></script>
+<script>
+store.set('user', { name:'Marcus' })
+store.get('user').name == 'Marcus'
+     document.getElementById("result").innerHTML =  store.get('user').name == 'Marcus'
+</script>
 <script type="application/javascript" src="https://www.spiritspotcafe.com/Scripts/local-storage.js">
      </script>
 <script type="application/javascript">function getIP(json) {
