@@ -478,7 +478,8 @@
 </body>
     <script src="https://www.spiritspotcafe.com/Scripts/store.everything.min.js"></script>
 <script>
-store.set('drink', { drink: here  })
+     var TYPE = document.getElementById("Type").value
+store.set('drink', { drink: TYPE  })
 
      document.getElementById("result").innerHTML =  store.get('drink').drink 
 </script>
