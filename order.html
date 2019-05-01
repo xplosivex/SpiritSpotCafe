@@ -28,7 +28,7 @@
     </div>
 </div>
 </header>
-     
+   <button style="padding-top:20px;" onclick="Save()"> Click </button>  
 <body onload="OpenTime()" style="margin:0; font-size: 15px; padding-top: 40px;" background="https://xplosivex.github.io/SpiritSpotCafe/Images/Background.jpg">
      
 <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
@@ -468,14 +468,46 @@
 <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
 </div>
   
+   
+
+     
 <div id="Thanks" style="border:black double 8px; border-radius: 15px;  background-color:white; display:none" class="thankyou_message">
 <h2>Thank you for ordering we will serve you soon.</h2>
 </div>
+  <script src="https://www.spiritspotcafe.com/Scripts/store.everything.min.js"></script>
+<script>
+  function Save() {
+var TYPE = document.getElementById("Type").value
+store.set('drink', { drink:TYPE})
+store.set('Snack1', { one:document.getElementById("AQ").value})
+store.set('Snack2', { two: document.getElementById("BQ").value })
+store.set('Snack3', { three: document.getElementById("CQ").value })
+store.set('Snack4', { four: document.getElementById("DQ").value })
+store.set('Snack5', { five: document.getElementById("EQ").value })
+store.set('Snack6', { six: document.getElementById("FQ").value })
+store.set('Snack7', { seven: document.getElementById("GQ").value })
+store.set('Snack8', { eight: document.getElementById("HQ").value })
+store.set('Snack9', { nine: document.getElementById("IQ").value })
+store.set('Snack10', { ten: document.getElementById("JQ").value })
+store.set('Snack11', { eleven: document.getElementById("KQ").value })
+store.set('Snack12', { tweleve: document.getElementById("LQ").value })
+store.set('Snack13', { thirteen: document.getElementById("MQ").value })
+store.set('Snack14', { fourteen: document.getElementById("NQ").value })
+store.set('Snack15', { fifteen: document.getElementById("OQ").value })
+store.set('Snack16', { sixteen: document.getElementById("PQ").value })
+store.set('Snack17', { seventeen: document.getElementById("QQ").value })
+store.set('Snack18', { eightteen: document.getElementById("RQ").value })
+store.set('Snack19', { nineteen: document.getElementById("SQ").value })
+store.set('Snack20', { twenty: document.getElementById("TQ").value })
+console.log(store.get('Snack1').one) 
+console.log(store.get('Snack2').two) 
+  }
+  </script>
 </form>
    
      <div id="result" style="border:black double 8px; display:none; border-radius: 15px; background-color:white;" > </div>
 <script data-cfasync="false" src="https://www.spiritspotcafe.com/Scripts/form-submission-handler.js"></script>
-<script src="https://www.spiritspotcafe.com/Scripts/store.everything.min.js"></script>
+
 <script src="https://www.spiritspotcafe.com/Scripts/Total.js"></script>
  </body>
     
@@ -495,10 +527,11 @@ ipblock.style.display='block';
 }
 }
 </script>
+  
 <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 <script src="https://www.spiritspotcafe.com/Scripts/Option.js"></script>
 <script src="https://www.spiritspotcafe.com/Scripts/VersionM.js"> </script>
 <script src="https://www.spiritspotcafe.com/Scripts/VersionN.js"> </script>
-
+<script src="https://www.spiritspotcafe.com/Scripts/Total.js"></script>
 <script src="https://www.spiritspotcafe.com/Scripts/Reload.js"></script>
 </html>
