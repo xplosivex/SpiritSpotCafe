@@ -1,7 +1,7 @@
 
 setTimeout(carousel,0)
 var I = 0;
-setInterval(carousel,1500)
+setInterval(carousel,3500)
 function carousel() {
 if (I > 2) {
 I = 0
