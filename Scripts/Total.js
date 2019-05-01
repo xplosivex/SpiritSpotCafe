@@ -493,6 +493,10 @@ var ExtraRep = ExtraS.replace(/ 0 /g, '')
     }
 }
  function Save() {
+store.set('Name', {N: document.getElementById("Name").value})
+console.log(store.get('Name').N)
+store.set('Email', {E: document.getElementById("Email").value})
+    console.log(store.get('Email').E)
     var TYPE = document.getElementById("Type").value
     store.set('drink', { drink:TYPE})
 if ( TYPE == "Hot Caramel"  || TYPE == "Hot Vanilla" || TYPE == "Iced Caramel" || TYPE  == "Iced Vanilla"  ) {
