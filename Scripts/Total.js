@@ -542,7 +542,8 @@ console.log(store.get('Snack3').three)
     }
     }
 function Restore() {
-   if (store.get('SnackC').C == "Yes"){ 
+   if (store.get('SnackC').C == "Yes"){
+  hiddenDiv2.style.display='block';
 document.getElementById("Extra2").value = "Yes";
  document.getElementById("AQ").value = store.get('Snack1').one;
  document.getElementById("BQ").value = store.get('Snack2').two;
@@ -554,7 +555,7 @@ document.getElementById("GQ").value = store.get('Snack7').seven;
 document.getElementById("HQ").value = store.get('Snack8').eight;
 document.getElementById("IQ").value = store.get('Snack9').nine;
 document.getElementById("JQ").value = store.get('Snack10').ten;
-document.getElementById("KQ").value = store.get('Snack11').four;
+document.getElementById("KQ").value = store.get('Snack11').eleven;
 document.getElementById("LQ").value = store.get('Snack12').tweleve;
 document.getElementById("MQ").value = store.get('Snack13').thirteen;
 document.getElementById("NQ").value = store.get('Snack14').fourteen;
