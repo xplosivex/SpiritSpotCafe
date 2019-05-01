@@ -495,8 +495,18 @@ var ExtraRep = ExtraS.replace(/ 0 /g, '')
  function Save() {
     var TYPE = document.getElementById("Type").value
     store.set('drink', { drink:TYPE})
-if ( here == "Hot Caramel"  || here == "Hot Vanilla" || here == "Iced Caramel" || here  == "Iced Vanilla"  ) {
-store.set('ToppingA', {A: document.getElementById("ToppingsA").value}
+if ( TYPE == "Hot Caramel"  || TYPE == "Hot Vanilla" || TYPE == "Iced Caramel" || TYPE  == "Iced Vanilla"  ) {
+store.set('ToppingA', {A: document.getElementById("ToppingsA").value})
+store.set('ToppingB', {B: document.getElementById("ToppingsB").value})
+store.set('ToppingC', {C: document.getElementById("ToppingsC").value})
+store.set('ToppingD', {D: document.getElementById("ToppingsD").value})
+   console.log(store.get('ToppingA').A) 
+   console.log(store.get('ToppingB').B) 
+   console.log(store.get('ToppingC').C) 
+   console.log(store.get('ToppingD').D) 
+} else if  ( TYPE == "Smoothie" ) {
+store.set('ToppingS', {S: document.getElementById("ToppingsJ").value})
+   console.log(store.get('ToppingS').S) 
 }
 store.set('Snack1', { one: document.getElementById("AQ").value})
 store.set('Snack2', { two: document.getElementById("BQ").value })
@@ -518,8 +528,9 @@ store.set('Snack17', { seventeen: document.getElementById("QQ").value })
 store.set('Snack18', { eightteen: document.getElementById("RQ").value })
 store.set('Snack19', { nineteen: document.getElementById("SQ").value })
 store.set('Snack20', { twenty: document.getElementById("TQ").value })
-console.log(store.get('drink').drink) 
-console.log(store.get('Snack2').two) 
+console.log(store.get('Snack1').one) 
+console.log(store.get('Snack2').two)
+console.log(store.get('Snack3').three)
   }
 
 
