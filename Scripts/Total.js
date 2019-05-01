@@ -542,6 +542,8 @@ console.log(store.get('Snack3').three)
     }
     }
 function Restore() {
+   document.getElementById("Name").value = store.get('Name').N
+  document.getElementById("Email").value = store.get('Email').E
    document.getElementById("Type").value = store.get('drink').drink
   var TYPEA = store.get('drink').drink
  
