@@ -542,6 +542,20 @@ console.log(store.get('Snack3').three)
     }
     }
 function Restore() {
+   document.getElementById("Type").value = store.get('drink').drink
+  var TYPEA = store.get('drink').drink
+ 
+if ( TYPEA == "Hot Caramel"  || TYPEA == "Hot Vanilla" || TYPEA == "Iced Caramel" || TYPEA  == "Iced Vanilla"  ){
+    hiddenDiv.style.display='block';
+   document.getElementById("ToppingsA").value} = store.get('ToppingA').A
+    document.getElementById("ToppingsB").value} = store.get('ToppingB').B
+ document.getElementById("ToppingsC").value} = store.get('ToppingC').C
+ document.getElementById("ToppingsD").value} = store.get('ToppingD').D
+} else if  ( TYPEA == "Smoothie" ) {
+ 
+hiddenDiv3.style.display='block';
+document.getElementById("ToppingsJ").value =  store.get('ToppingS').S 
+}
    if (store.get('SnackC').C == "Yes"){
   hiddenDiv2.style.display='block';
 document.getElementById("Extra2").value = "Yes";
