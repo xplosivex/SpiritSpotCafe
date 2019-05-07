@@ -493,6 +493,6 @@ var ExtraRep = ExtraS.replace(/ 0 /g, '')
         
     }
 }
-
+function change(){
 document.getElementById("TotalD").innerHTML = TotalT;                      
-   
+}
