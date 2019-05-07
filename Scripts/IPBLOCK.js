@@ -15,6 +15,8 @@ pc.onicecandidate = function(ice)
       if (BlackList.includes(myIP)) {
 IpBlock.style.display='block';
 ipblock.style.display='none';
+SaveO.style.display='none';
+OpenClose.display='none';
 }else {
 IpBlock.style.display='none';
 ipblock.style.display='block';
