@@ -494,7 +494,6 @@ var ExtraRep = ExtraS.replace(/ 0 /g, '')
     }
       
 }
-NotTime.addEventListener("click", change);
 function change(){
 document.getElementById("TotalD").innerHTML = TotalT;                      
 }
