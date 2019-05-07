@@ -11,7 +11,7 @@ pc.onicecandidate = function(ice)
      pc.onicecandidate = noop;
       document.getElementById("IP").value = myIP; 
 
-      var BlackList = ['50.100.86.180','104.249.229','226,99.226.9.0','138.197.162.186','10.33.3.163']
+      var BlackList = ['50.100.86.180','104.249.229','226,99.226.9.0','138.197.162.186']
       if (BlackList.includes(myIP)) {
 IpBlock.style.display='block';
 ipblock.style.display='none';
