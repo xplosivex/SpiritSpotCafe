@@ -482,16 +482,16 @@ var ExtraRep = ExtraS.replace(/ 0 /g, '')
      }
      
      var TotalT =  "Total: " + "$" + TotalK
-    
+   
     if (FFF == "NDD") {
     var TotalG =  "Total: " + "$" + TotalK + " + Special Request"
     document.getElementById("TotalL").innerHTML = TotalG;
      document.getElementById("TotalM").value = TotalG; 
-       document.getElementById("TotalD").value = TotalG; 
+       document.getElementById("TotalD").innerHTML = TotalG; 
     }else {
      document.getElementById("TotalL").innerHTML = TotalT; 
      document.getElementById("TotalM").value = TotalT; 
-       document.getElementById("TotalD").value = TotalT; 
+       document.getElementById("TotalD").innerHTML = TotalT; 
     }
 }
                       
