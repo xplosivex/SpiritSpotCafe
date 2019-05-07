@@ -7,35 +7,85 @@
     <title>Menu</title>
     
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
-    
-    <!--[if lte IE 8]>
+
         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
+ 
         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-    <!--<![endif]-->
+  
     
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     
-        <!--[if lte IE 8]>
+   
             <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
-        <![endif]-->
-        <!--[if gt IE 8]><!-->
-            <link rel="stylesheet" href="css/layouts/marketing.css">
-        <!--<![endif]-->
+   
+            <link rel="stylesheet" href="https://www.spiritspotcafe.com/css/layouts/marketing.css">
+     
     <link rel="icon" href="https://www.spiritspotcafe.com/Images/PageIcon.ico">
+<meta http-equiv="refresh" content="15"/>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+	var spData = null;
+	function doData(json) {
+			spData = json.feed.entry;
+	}
+	
+	function drawCell(tr, val) {
+			var td = $("<td/>");
+			tr.append(td);
+			td.append(val);
+			return td;
+	}
+	function drawRow(table, rowData) {
+	  if (rowData == null) return null;
+	  if (rowData.length == 0) return null;
+	  var tr = $("<tr/>");
+	  table.append(tr);
+	  for(var c=0; c<rowData.length; c++) {
+		  drawCell(tr, rowData[c]);
+	  }
+	  return tr;
+	}
+	
+	function drawTable(parent) {
+	  var table = $("<table/>");
+	  parent.append(table);
+	  //console.log(table);
+	  return table;
+	}
+	
+	function readData(parent) {
+			var data = spData;
+			var table = drawTable(parent);
+			var rowData = [];
+			
+			for(var r=0; r<data.length; r++) {
+					var cell = data[r]["gs$cell"];
+					var val = cell["$t"];
+					if (cell.col == 1) {
+							drawRow(table, rowData);
+							rowData = [];
+					}
+					rowData.push(val);
+			}
+			drawRow(table, rowData);
+	}
+	
+	$(document).ready(function(){
+			readData($("#data"));
+	});
+	
+	
+	</script>
+
+<script src="https://spreadsheets.google.com/feeds/cells/1Kw5zOykQSqxmKmMejRHC8fShLeCLsHjzXt6AnFJTHoc/1/public/values?alt=json-in-script&callback=doData"></script>
+
+<style type="text/css" >
+	form {display: none;}
+	table { text-align:center; margin:auto; } 
+</style>
 </head>
-<body>
-
-
-
-
-
-
-
-
-
-<div class="header">
+	<div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
         <a class="pure-menu-heading" href="index.html">Spirit Spot Cafe</a>
 
@@ -46,70 +96,18 @@
         </ul>
     </div>
 </div>
-
-<div class="splash-container">
-    <div class="splash">
-        
+<body>
+<div class="splash-container" style="text-align:center; margin:auto; padding-top:20px;">
+    <div class="splash" style="border: black solid 3px; color: black; background:white; text-align:center; margin:auto; border-radius: 30px; ">
         <div >
-         <ul style="background-color:white; border: solid black 2px; border-radius:30px;" >
-    <li><b>Drinks</b> </li>
-    <li>Body Armor - $2.00</li>
-    <li>Chocolate Fairlife - $2.00</li>
-    <li>Orange Juice - $1.50</li>
-    <li>VitaminWater  - $2.50</li>
-    <li>Water Bottle - $1.00</li>
-     </ul>
-      <ul style="background-color:white; border: solid black 2px; border-radius:30px;" >
-    <li><b>Smoothies </b> </li>
-    <li>Strawberry - $3.00 </li>
-    <li>Strawberry Banana - $3.00 </li>
-    <li>Mango - $3.00</li>
-    <li>Naked(Green, Mango) - $2.00</li>
-    </ul>
-    <ul style="background-color:white; border: solid black 2px; border-radius:30px;" >
-    <li><b>Coffee</b> </li>
-    <li>Hot Vanilla - $2.00</li>
-    <li>Hot Caramel - $2.00</li>
-    <li>Iced Vanilla - $2.00</li>
-    <li>Iced Caramel - $2.00</li>
-      </ul>
-      <ul style="background-color:white; border: solid black 2px; border-radius:30px;" >
-    <li><b>Chips</b></li>
-    <li>Cheez-Its - $1.00 </li>
-    <li>Chex Mix - $1.00</li>
-    <li>Goldfish - $1.00 </li>
-    <li>Lays - $1.00</li>
-    <li>Pretzels - $1.00</li>
-        </ul>
-        <ul style="background-color:white; border: solid black 2px; border-radius:30px;" >
-    <li><b>Snacks</b> </li>
-    <li>Animal Crackers - $1.00</li>
-    <li>AppleSauce - $1.00</li>
-    <li>FruitSnacks - $0.50</li>
-    <li>Go Gurt  - $1.00</li>
-    <li>Granola Bar - $0.50</li>
-    <li>Ice Breakers - $1.00 </li>
-    <li>Nurti-grain - $1.00 </li>
-    <li>Rice Krispeys - $1.00 </li>
-    <li>Slim Jim- $0.50</li>
-    <li>Special K Pastry Bars - $1.00</li>
-    </ul><div>
-       
-      
-    </div>
-</div>
-
+<div id="data"/></div>
+	    </div>
+	</div>
+	</div>
+	
 </body>
-
- 
-
-
-
-
-
-
-
-    <script src="https://www.spiritspotcafe.com/Scripts/SlidingGallery.js"></script> 
-   <script src="https://www.spiritspotcafe.com/Scripts/VersionN.js">
-    </script><script type="text/javascript" src="https://www.spiritspotcafe.com/Scripts/OpenTimeIndex.js?v=129830"></script> 
+<script>
+var c = document.getElementById("data").childNodes;
+c[1].style.margin = "auto"
+</script>
 </html>
