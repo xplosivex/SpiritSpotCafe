@@ -492,7 +492,9 @@ var ExtraRep = ExtraS.replace(/ 0 /g, '')
      document.getElementById("TotalM").value = TotalT; 
         
     }
+      
 }
+NotTime.addEventListener("click", change);
 function change(){
 document.getElementById("TotalD").innerHTML = TotalT;                      
 }
