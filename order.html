@@ -14,7 +14,7 @@
      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <script type="text/javascript">
-	var spData = null;
+	var sp = null;
 	function doData(json) {
 			spData = json.feed.entry;
 	}
@@ -70,7 +70,7 @@
 <script src="https://spreadsheets.google.com/feeds/cells/1Kw5zOykQSqxmKmMejRHC8fShLeCLsHjzXt6AnFJTHoc/1/public/values?alt=json-in-script&callback=doData"></script>
 
 </head>
-  <div style="display:none;" id="data"/>   
+   
 <header style="padding-bottom:90px;">
 <div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
@@ -538,7 +538,7 @@
 </div>
   <script src="https://www.spiritspotcafe.com/Scripts/store.everything.min.js"></script>
 </form>
-   
+	<div style="display:none;" id="data"/>  </div>
      <div id="result" style="border:black double 8px; display:none; border-radius: 15px; background-color:white;" > </div>
 <script data-cfasync="false" src="https://www.spiritspotcafe.com/Scripts/form-submission-handler.js"></script>
 
