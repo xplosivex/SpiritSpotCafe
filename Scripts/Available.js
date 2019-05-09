@@ -3,22 +3,37 @@ setTimeout(Aval,3000)
 	var B1 = document.getElementById("B1").innerHTML
 if (B1.includes("Available")){}else{
 BQ.style.display='none';
+setInterval(function(){
+store.set('Snack2', { two: 0})
+},10)
 }
 var B2 = document.getElementById("B2").innerHTML
 if (B2.includes("Available")){}else{
 EQ.style.display='none';
+setInterval(function(){
+store.set('Snack5', { five: 0})
+},10)
 }
 var B3 = document.getElementById("B3").innerHTML
 if (B3.includes("Available")){}else{
 GQ.style.display='none';
+setInterval(function(){
+store.set('Snack7', { seven: 0})
+},10)
 }
 var B4 = document.getElementById("B4").innerHTML
 if (B4.includes("Available")){}else{
 HQ.style.display='none';
+setInterval(function(){
+store.set('Snack8', { eight: 0})
+},10)
 }
 var B5 = document.getElementById("B5").innerHTML
 if (B5.includes("Available")){}else{
 IQ.style.display='none';
+setInterval(function(){
+store.set('Snack9', { nine: 0})
+},10)
 }
 var B6 = document.getElementById("B6").innerHTML
 if (B6.includes("Available")){}else{
@@ -55,10 +70,16 @@ T6.style.display='none';
 var B14 = document.getElementById("B14").innerHTML
 if (B14.includes("Available")){}else{
 FQ.style.display='none';
+setInterval(function(){
+store.set('Snack6', { six: 0})
+},10)
 }
 var B15 = document.getElementById("B15").innerHTML
 if (B15.includes("Available")){}else{
 JQ.style.display='none';
+setInterval(function(){
+store.set('Snack10', { ten: 0})
+},10)
 }
 var B16 = document.getElementById("B16").innerHTML
 if (B16.includes("Available")){}else{
@@ -67,6 +88,9 @@ LQ.style.display='none';
 var B17 = document.getElementById("B17").innerHTML
 if (B17.includes("Available")){}else{
 CQ.style.display='none';
+setInterval(function(){
+store.set('Snack3', { three: 0})
+},10)
 }
 var B18 = document.getElementById("B18").innerHTML
 if (B18.includes("Available")){}else{
@@ -91,6 +115,9 @@ PQ.style.display='none';
 var B23 = document.getElementById("B23").innerHTML
 if (B23.includes("Available")){}else{
 DQ.style.display='none';
+setInterval(function(){
+store.set('Snack4', { four: 0})
+},10)
 }
 var B24 = document.getElementById("B24").innerHTML
 if (B24.includes("Available")){}else{
