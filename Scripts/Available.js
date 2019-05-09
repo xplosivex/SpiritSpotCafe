@@ -84,6 +84,9 @@ store.set('Snack10', { ten: 0})
 var B16 = document.getElementById("B16").innerHTML
 if (B16.includes("Available")){}else{
 LQ.style.display='none';
+setInterval(function(){
+store.set('Snack12', { tweleve: 0})
+},10)
 }
 var B17 = document.getElementById("B17").innerHTML
 if (B17.includes("Available")){}else{
@@ -95,22 +98,37 @@ store.set('Snack3', { three: 0})
 var B18 = document.getElementById("B18").innerHTML
 if (B18.includes("Available")){}else{
 KQ.style.display='none';
+setInterval(function(){
+store.set('Snack11', { eleven: 0})
+},10)
 }
 var B19 = document.getElementById("B19").innerHTML
 if (B19.includes("Available")){}else{
 MQ.style.display='none';
+setInterval(function(){
+store.set('Snack13', { thirteen: 0})
+},10)
 }
 var B20 = document.getElementById("B20").innerHTML
 if (B20.includes("Available")){}else{
 NQ.style.display='none';
+setInterval(function(){
+store.set('Snack14', { fourteen: 0})
+},10)
 }
 var B21 = document.getElementById("B21").innerHTML
 if (B21.includes("Available")){}else{
 OQ.style.display='none';
+setInterval(function(){
+store.set('Snack15', { fifteen: 0})
+},10)
 }
 var B22 = document.getElementById("B22").innerHTML
 if (B22.includes("Available")){}else{
 PQ.style.display='none';
+setInterval(function(){
+store.set('Snack16', { sixteen: 0})
+},10)
 }
 var B23 = document.getElementById("B23").innerHTML
 if (B23.includes("Available")){}else{
@@ -129,17 +147,29 @@ store.set('Snack1', { one: 0})
 var B25 = document.getElementById("B25").innerHTML
 if (B25.includes("Available")){}else{
 QQ.style.display='none';
+setInterval(function(){
+store.set('Snack17', { seventeen: 0})
+},10)
 }
 var B26 = document.getElementById("B26").innerHTML
 if (B26.includes("Available")){}else{
 RQ.style.display='none';
+setInterval(function(){
+store.set('Snack18', { eightteen: 0})
+},10)
 }
 var B27 = document.getElementById("B27").innerHTML
 if (B27.includes("Available")){}else{
 SQ.style.display='none';
+setInterval(function(){
+store.set('Snack19', { nineteen: 0})
+},10)
 }
 var B28 = document.getElementById("B28").innerHTML
 if (B28.includes("Available")){}else{
 TQ.style.display='none';
+setInterval(function(){
+store.set('Snack20', { twenty: 0})
+},10)
 }
 }
