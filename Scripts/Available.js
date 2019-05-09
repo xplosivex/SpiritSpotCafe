@@ -38,18 +38,30 @@ store.set('Snack9', { nine: 0})
 var B6 = document.getElementById("B6").innerHTML
 if (B6.includes("Available")){}else{
 Top1.style.display='none';
+setTimeout(function(){
+store.set('ToppingS', {S: 'No Type Of Smoothie Picked'})
+},10)
 }
 var B7 = document.getElementById("B7").innerHTML
 if (B7.includes("Available")){}else{
 Top2.style.display='none';
+setTimeout(function(){
+store.set('ToppingS', {S: 'No Type Of Smoothie Picked'})
+},10)
 }
 var B8 = document.getElementById("B8").innerHTML
 if (B8.includes("Available")){}else{
 Top3.style.display='none';
+setTimeout(function(){
+store.set('ToppingS', {S: 'No Type Of Smoothie Picked'})
+},10)
 }
 var B9 = document.getElementById("B9").innerHTML
 if (B9.includes("Available")){}else{
 Top4.style.display='none';
+setTimeout(function(){
+store.set('ToppingS', {S: 'No Type Of Smoothie Picked'})
+},10)
 }
 var B10 = document.getElementById("B10").innerHTML
 if (B10.includes("Available")){}else{
