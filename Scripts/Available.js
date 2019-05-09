@@ -97,7 +97,7 @@ if (B24.includes("Available")){}else{
 AQ.style.display='none';
 setInterval(function(){
 store.set('Snack1', { one: 0})
-}
+},10)
 }
 var B25 = document.getElementById("B25").innerHTML
 if (B25.includes("Available")){}else{
