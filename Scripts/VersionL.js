@@ -14,3 +14,5 @@ function loadStyle(href, callback){
     if (callback) { link.onload = function() { callback() } }
     head.appendChild(link);
 }
+
+loadStyle()
