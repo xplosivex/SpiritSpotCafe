@@ -1,4 +1,4 @@
-
+setTimeout(loadStyle, 150)
 function loadStyle(href, callback){
     // avoid duplicates
     for(var i = 0; i < document.styleSheets.length; i++){
@@ -15,4 +15,4 @@ function loadStyle(href, callback){
     head.appendChild(link);
 }
 
-loadStyle()
+
