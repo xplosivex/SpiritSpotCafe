@@ -495,5 +495,5 @@ var ExtraRep = ExtraS.replace(/ 0 /g, '')
       
 }
 
-document.getElementById("TotalD").innerHTML = TotalT;                      
+                     
 
