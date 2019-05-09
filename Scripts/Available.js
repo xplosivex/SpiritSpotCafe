@@ -54,18 +54,31 @@ Top4.style.display='none';
 var B10 = document.getElementById("B10").innerHTML
 if (B10.includes("Available")){}else{
 T4.style.display='none';
+setTimeout(function(){
+store.set('drink', { drink:'None'})
+},10)
+	 
 }
 var B11 = document.getElementById("B11").innerHTML
 if (B11.includes("Available")){}else{
 T3.style.display='none';
+setTimeout(function(){
+store.set('drink', { drink:'None'})
+},10)
 }
 var B12 = document.getElementById("B12").innerHTML
 if (B12.includes("Available")){}else{
 T5.style.display='none';
+setTimeout(function(){
+store.set('drink', { drink:'None'})
+},10)
 }
 var B13 = document.getElementById("B13").innerHTML
 if (B13.includes("Available")){}else{
 T6.style.display='none';
+setTimeout(function(){
+store.set('drink', { drink:'None'})
+},10)
 }
 var B14 = document.getElementById("B14").innerHTML
 if (B14.includes("Available")){}else{
