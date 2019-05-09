@@ -11,7 +11,7 @@ SaveO.style.display='none';
 if ( hours > 6) {
   if (hours < 15){
 document.getElementById("NotTime").style.display = "block"
-SaveO.style.display='block';
+SaveO.style.display='none';
 } else {
 document.getElementById("NotTime").style.display = "none"
 SaveO.style.display='none';
