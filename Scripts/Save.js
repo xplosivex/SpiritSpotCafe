@@ -19,6 +19,8 @@ store.set('ToppingD', {D: document.getElementById("ToppingsD").value})
 store.set('ToppingS', {S: document.getElementById("ToppingsJ").value})
    console.log(store.get('ToppingS').S) 
 }
+   
+  store.set('Pickup', { P: document.getElementById("Pickup").value})
     var Extra = document.getElementById("Extra2").value
 store.set('SnackC', { C: document.getElementById("Extra2").value})
     if (Extra == "Yes") {
@@ -48,6 +50,7 @@ console.log(store.get('Snack3').three)
     }
     }
 function Restore() {
+  document.getElementById("Pickup").value = store.get('Pickup').P
    document.getElementById("Name").value = store.get('Name').N
   document.getElementById("Email").value = store.get('Email').E
    document.getElementById("Type").value = store.get('drink').drink
