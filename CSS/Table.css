@@ -3,3 +3,9 @@ background-color: white;
 border: black solid 3px; 
 border-radius: 30px;
 }
+.BordDiv1 { 
+background-color: black;
+color:white;
+border: black solid 5px; 
+border-radius: 30px;
+}
