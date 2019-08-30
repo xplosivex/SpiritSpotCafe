@@ -13,8 +13,7 @@ if ( hours > 6) {
 document.getElementById("NotTime").style.display = "block"
 
 } else {
-document.getElementById("NotTime").style.display = "none"
-SaveO.style.display='none';
+
 }
 }
 }
