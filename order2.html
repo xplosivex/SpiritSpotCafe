@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="https://www.spiritspotcafe.com/CSS/Navbar.css">
+<link type="text/css" rel="stylesheet" href="https://www.spiritspotcafe.com/CSS/Fonts.css">
+     <link rel="stylesheet" href="css/layouts/marketing.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="contact form example">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<title>Order Up!</title>
+<link rel="icon" href="https://www.spiritspotcafe.com/Images/PageIcon.ico">
+</head>
+     
+<header style="padding-bottom:90px;">
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="index.html">Spirit Spot Cafe</a>
+
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item">
+                
+          <li class="pure-menu-item"><a href="contact.html" class="pure-menu-link">Contact</a></li>
+            <li class="pure-menu-item"><a href="menu.html" class="pure-menu-link">Menu</a></li>
+            <li class="pure-menu-item"><a href="order.html" class="pure-menu-link">Order</a></li>
+        </ul>
+    </div>
+</div>
+</header>
+ 
+<body onload="OpenTime()" style="margin:0; font-size: 15px; padding-top: 40px;" background="https://xplosivex.github.io/SpiritSpotCafe/Images/Background.jpg">
+  <div id="OpenClose" style="border:black double 8px;  border-radius: 15px; background-color:white;"><p> Orders Are Currently Not Being Accepted</p>   </div>
+    
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+<!-- START HERE -->
+     <table style="margin:0; width:100%;" id="SaveO" ><tr><th>
+ <button style="border:black double 8px;  border-radius: 15px; background-color:white; width:100%;" onclick="Save()"> Save Order</button>  
+ </th><th>
+<button style="border:black double 8px;  border-radius: 15px; background-color:white; width:100%;" onclick="Restore()"> Restore Order </button>  
+</th></tr></table> 
+
+<form id="NotTime"  class="gform pure-form pure-form-stacked" method="POST" action="https://script.google.com/macros/s/AKfycbw9mN1c_CT51vCimuvCqUCBBbu1Xq9m3p_qAVukov-B0gmn9t8/exec" style="display:none;">
+ 
+<div id="IpBlock" style="border:black double 8px; display:none; border-radius: 15px; background-color:white;"><p> You have been blocked from ordering.</p>   </div>
+<div id="ipblock" class="form-elements " style=" float:left; width:100%; height:1000; background:url("https://xplosivex.github.io/SpiritSpotCafe/Images/Background.jpg");">
+<div >
+<fieldset class="pure-group" style=" border:black double 8px; border-radius: 15px; background-color:white;">
+<label for="Name">Name:</label><br>
+     <input  required id="Name"  class="pure-input-rounded" name="Name"  /> 
+</fieldset>
+     </div>
+<fieldset class="pure-group" style="border:black double 8px; border-radius: 15px; background-color:white;">
+<label for="Type">Type Of Drink:</label><br>   
+<select id="Type" name="Type" onchange="change()">
+     <option value="None">None</option>
+     <option value="Smoothie">Smoothie</option>
+     <option value="Hot Chocolate">Hot Chocolate</option>
+     <option value="Hot Caramel">Hot Caramel</option>
+     <option value="Hot Vanilla">Hot Vanilla</option>
+     <option value="Iced Vanilla">Iced Vanilla</option>
+     <option value="Iced Caramel">Iced Caramel</option>
+     <option value="Special Request">Special Request</option>
+</select> 
+</fieldset>
+     
+<fieldset id="hiddenDiv3"  style=" border:black double 8px; display:none; border-radius: 15px; width:95%; background-color:white;">
+<label for="Toppings" >Type Of Smoothie:</label><br>
+<select id="ToppingsJ"   >           
+     <option  name="Toppings" value="Strawberry">Strawberry</option>
+     <option name="Toppings" value="Strawberry Banana">Strawberry Banana</option>
+     <option name="Toppings" value="Mango">Mango</option>
+     <option name="Toppings"  value="Naked">Naked</option>
+</select> 
+</fieldset>   
+                  
+                  
+<fieldset id="hiddenDiv"  style=" border:black double 8px; display:none; border-radius: 15px; width:95%; background-color:white;">    
+<label for="Toppings">Toppings:</label>
+<table>
+<tr><th>
+     <p>Chocolate</p>
+</th><th>
+<select id="ToppingsA"   >           
+     <option  value="No Chocolate">No Chocolate</option>
+     <option  value="Lite Chocolate">Lite Chocolate</option>
+     <option value="Regular Chocolate">Regular Chocolate</option>
+     <option  value="Extra Chocolate">Extra Chocolate</option>
+</select>
+</th><tr>
+     </table>
+     <table>
+<tr><th>
+     <p>Caramel</p>
+</th><th>
+<select id="ToppingsB"   >           
+     <option  value="No Caramel">No Caramel</option>
+     <option value="Lite Caramel">Lite Caramel</option>
+     <option  value="Regular Caramel">Regular Caramel</option>
+     <option  value="Extra Caramel">Extra Caramel</option>
+</select>
+</th><tr>
+     </table>
+     <table>
+<tr><th>
+     <p>Whipped Cream</p>
+</th><th>
+<select id="ToppingsC"   >           
+     <option   value="No Whipped Cream">No Whipped Cream</option>
+     <option  value="Lite Whipped Cream">Lite Whipped Cream</option>
+     <option  value="Regular Whipped Cream">Regular Whipped Cream</option>
+     <option  value="Extra Whipped Cream">Extra Whipped Cream</option>
+</select>
+</th><tr>
+     </table>
+  <table>
+<tr><th>
+     <p>Almond Milk</p>
+</th><th>
+<select id="ToppingsD"   >           
+     <option   value="No Almond Milk">No Almond Milk</option>
+     <option  value="Lite Almond Milk">Lite Almond Milk</option>
+     <option  value="Regular Almond Milk">Regular Almond Milk</option>
+     <option   value="Extra Almond Milk">Extra Almond Milk</option>
+</select>
+</th><tr>
+     </table>
+     <li style="display:none;" ><input type="checkbox" id="ToppingsE" name="Toppings" value="" checked></li>
+</fieldset>
+
+<fieldset class="pure-group" style="border:black double 8px; border-radius: 15px; background-color:white;">
+<label>Any Extras or snacks?</label><br>
+<select id="Extra2" onchange="change2()">
+     <option value="No">No</option>
+     <option value="Yes">Yes</option>
+</select> 
+</fieldset>
+   
+<fieldset id="hiddenDiv2"  style=" display:none; border:black double 8px; border-radius: 15px; background-color:white;">
+<label for="Extra">Extras</label>
+<ul>
+<table>
+<tr><th>
+<select id="AQ"   >   
+     <option value="0">0</option>
+     <option  value="1 Ice Breaker">1</option>
+     <option  value="2 Ice Breaker">2</option>
+     <option  value="3 Ice Breaker">3</option>
+     <option  value="4 Ice Breaker">4</option>
+     <option  value="5 Ice Breaker">5</option>
+</select> 
+</th><th>
+<li><p>Ice Breaker</p><br></li>
+</th></tr>
+</table>
+     
+<table>
+<tr><th>
+<select id="BQ"  >  
+     <option  value="0">0</option>
+     <option  value="1 Body Armor">1</option>
+     <option  value="2 Body Armor">2</option>
+     <option  value="3 Body Armor">3</option>
+     <option  value="4 Body Armor">4</option>
+     <option  value="5 Body Armor">5</option>
+</select> 
+</th><th>
+<li><p >Body Armor</p><br></li>
+</th></tr>
+</table>
+     
+<table>
+<tr><th>
+<select id="CQ" >   
+     <option  value="0">0</option>
+     <option  value="1 Lays">1</option>
+     <option  value="2 Lays">2</option>
+     <option  value="3 Lays">3</option>
+     <option  value="4 Lays">4</option>
+     <option  value="5 Lays">5</option>
+</select> 
+</th><th>
+<li><p>Lays</p><br></li>
+</th></tr>
+</table>
+    
+<table>
+<tr><th>
+<select id="DQ" >  
+     <option  value="0">0</option>
+     <option  value="1 Granola Bar">1</option>
+     <option  value="2 Granola Bar">2</option>
+     <option  value="3 Granola Bar">3</option>
+     <option  value="4 Granola Bar">4</option>
+     <option  value="5 Granola Bar">5</option>
+</select> 
+</th><th>   
+<li><p>Granola Bar</p><br></li>
+</th></tr>
+</table>
+     
+<table>
+<tr><th>
+<select id="EQ" >   
+     <option  value="0">0</option>
+     <option  value="1 Chocolate Milk">1</option>
+     <option  value="2 Chocolate Milk">2</option>
+     <option  value="3 Chocolate Milk">3</option>
+     <option  value="4 Chocolate Milk">4</option>
+     <option  value="5 Chocolate Milk">5</option>
+</select>      
+</th><th>   
+<li><p>Chocolate Milk</p><br></li>
+</th></tr>
+</table>
+     
+<table>
+<tr><th>
+<select id="FQ" > 
+     <option  value="0">0</option>
+     <option  value="1 Cheez-Itz">1</option>
+     <option  value="2 Cheez-Itz">2</option>
+     <option  value="3 Cheez-Itz">3</option>
+     <option  value="4 Cheez-Itz">4</option>
+     <option  value="5 Cheez-Itz">5</option>
+</select> 
+</th><th>   
+<li> <p>Cheez-Itz</p><br></li>
+</th></tr>
+</table>
+        
+<table>
+<tr><th>
+<select id="GQ" >  
+     <option  value="0">0</option>
+     <option  value="1 Orange Juice">1</option>
+     <option  value="2 Orange Juice">2</option>
+     <option  value="3 Orange Juice">3</option>
+     <option  value="4 Orange Juice">4</option>
+     <option  value="5 Orange Juice">5</option>
+</select> 
+</th><th> 
+<li><p>Orange Juice</p><br></li>
+</th></tr>
+</table>
+     
+<table>
+<tr><th >
+<select id="HQ" >   
+     <option  value="0">0</option>
+     <option  value="1 Vitamin Water">1</option>
+     <option  value="2 Vitamin Water">2</option>
+     <option  value="3 Vitamin Water">3</option>
+     <option  value="4 Vitamin Water">4</option>
+     <option  value="5 Vitamin Water">5</option>
+</select> 
+</th><th> 
+<li><p>Vitamin Water</p><br></li>
+</th></tr>
+</table>
+ 
+<table>
+<tr><th>
+<select id="IQ" > 
+     <option  value="0">0</option>          
+     <option  value="1 Water Bottle">1</option>
+     <option  value="2 Water Bottle">2</option>
+     <option  value="3 Water Bottle">3</option>
+     <option  value="4 Water Bottle">4</option>
+     <option  value="5 Water Bottle">5</option>
+</select> 
+</th><th>   
+<li><p>Water Bottle</p><br></li>
+</th></tr>
+</table>
+          
+<table>
+<tr><th>
+<select id="JQ" >   
+     <option  value="0">0</option>
+     <option  value="1 Chex Mix">1</option>
+     <option  value="2 Chex Mix">2</option>
+     <option  value="3 Chex Mix">3</option>
+     <option  value="4 Chex Mix">4</option>
+     <option  value="5 Chex Mix">5</option>
+</select> 
+</th><th>
+<li><p>Chex Mix</p><br></li>
+</th></tr>
+</table>
+     
+<table>
+<tr><th>
+<select id="KQ" > 
+     <option  value="0">0</option>
+     <option  value="1 Pretzels">1</option>
+     <option  value="2 Pretzels">2</option>
+     <option  value="3 Pretzels">3</option>
+     <option  value="4 Pretzels">4</option>
+     <option  value="5 Pretzels">5</option>
+</select> 
+</th><th>   
+<li><p>Pretzels</p><br></li>
+</th></tr>
+</table>
+     
+<table>
+<tr><th>
+<select id="LQ" > 
+     <option  value="0">0</option>
+     <option  value="1 Gold Fish">1</option>
+     <option  value="2 Gold Fish">2</option>
+     <option  value="3 Gold Fish">3</option>
+     <option  value="4 Gold Fish">4</option>
+     <option  value="5 Gold Fish">5</option>
+</select> 
+</th><th>     
+<li><p>Gold Fish</p><br></li>
+</th></tr>
+</table>
+        
+<table>
+<tr><th>
+<select id="MQ" >
+     <option  value="0">0</option>
+     <option  value="1 Animal Crackers">1</option>
+     <option  value="2 Animal Crackers">2</option>
+     <option  value="3 Animal Crackers">3</option>
+     <option  value="4 Animal Crackers">4</option>
+     <option  value="5 Animal Crackers">5</option>
+</select> 
+</th><th> 
+<li><p>Animal Crackers</p><br></li>
+</th></tr>
+</table>
+
+<table>
+<tr><th>
+<select id="NQ" >  
+     <option  value="0">0</option>
+     <option  value="1 AppleSauce">1</option>
+     <option  value="2 AppleSauce">2</option>
+     <option  value="3 AppleSauce">3</option>
+     <option  value="4 AppleSauce">4</option>
+     <option  value="5 AppleSauce">5</option>
+</select> 
+</th><th> 
+<li><p>AppleSauce</p><br></li>
+</th></tr>
+</table>
+
+<table>
+<tr><th>
+<select id="OQ" >   
+     <option  value="0">0</option>
+     <option  value="1 FruitSnacks">1</option>
+     <option  value="2 FruitSnacks">2</option>
+     <option  value="3 FruitSnacks">3</option>
+     <option  value="4 FruitSnacks">4</option>
+     <option  value="5 FruitSnacks">5</option>
+</select> 
+</th><th>  
+<li><p>FruitSnacks</p><br></li>
+</th></tr>
+</table>
+
+<table>
+<tr><th>
+<select id="PQ" >    
+     <option  value="0">0</option>
+     <option  value="1 Go Gurt">1</option>
+     <option  value="2 Go Gurt">2</option>
+     <option  value="3 Go Gurt">3</option>
+     <option  value="4 Go Gurt">4</option>
+     <option  value="5 Go Gurt">5</option>
+</select> 
+</th><th>   
+<li><p>Go Gurt</p><br></li>
+</th></tr>
+</table>
+       
+<table>
+<tr><th>
+<select id="QQ" >   
+     <option  value="0">0</option>
+     <option  value="1 Nutri Grain">1</option>
+     <option  value="2 Nutri Grain">2</option>
+     <option  value="3 Nutri Grain">3</option>
+     <option  value="4 Nutri Grain">4</option>
+     <option  value="5 Nutri Grain">5</option>
+</select> 
+</th><th>   
+<li><p>Nutri Grain</p><br></li>
+</th></tr></table>
+
+<table>
+<tr><th>
+<select id="RQ" >  
+     <option  value="0">0</option>
+     <option  value="1 Rice Krispys">1</option>
+     <option  value="2 Rice Krispys">2</option>
+     <option  value="3 Rice Krispys">3</option>
+     <option  value="4 Rice Krispys">4</option>
+     <option  value="5 Rice Krispys">5</option>
+</select> 
+</th><th>      
+<li><p>Rice Krispys</p><br></li>
+</th></tr></table>
+
+<table>
+<tr><th>
+<select id="SQ" >  
+     <option  value="0">0</option>
+     <option  value="1 Slim Jim">1</option>
+     <option  value="2 Slim Jim">2</option>
+     <option  value="3 Slim Jim">3</option>
+     <option  value="4 Slim Jim">4</option>
+     <option  value="5 Slim Jim">5</option>
+</select> 
+</th><th> 
+<li><p>Slim Jim</p><br></li>
+</th></tr>
+</table>
+
+<table>
+<tr><th>
+<select id="TQ" >  
+     <option  value="0">0</option>
+     <option  value="1 Special K">1</option>
+     <option  value="2 Special K">2</option>
+     <option  value="3 Special K">3</option>
+     <option  value="4 Special K">4</option>
+     <option  value="5 Special K">5</option>
+</select> 
+</th><th>   
+<li><p>Special K</p><br></li>
+</th></tr>
+</table>
+</ul>
+</fieldset>
+     
+<fieldset class="pure-group" style="border:black; display:none; double 8px; border-radius: 15px; background-color:white;">
+<label for="Extra">Extra:</label><br>
+     <input  required id="ExtraSelect"  class="pure-input-rounded" name="Extra"   /> 
+</fieldset>
+
+ 
+<fieldset id="hiddenDiv4" class="pure-group" style="border:black double 8px; border-radius: 15px; background-color:white;">
+<label for="Pickup Time">Pickup Time</label><br>
+     <input  class="pure-input-rounded" value="Now" name="Pickup Time"   /> 
+</fieldset>
+     
+<fieldset class="pure-group" style=" border:black double 8px; border-radius: 15px; background-color:white;">
+<label for="Email">Your Email Address:</label> <br>
+     <input id="Email" class="pure-input-rounded" name="Email" type="Email" value="" required placeholder="Your email."/>
+<span class="email-invalid" style="display:none"> Must be a valid email address</span>
+</fieldset>
+    
+<fieldset class="pure-group" style="border:black double 8px; display:none; border-radius: 15px; background-color:white;">
+<label for="Total">Total:</label><br>
+     <input  required id="TotalM"  class="pure-input-rounded" name="Total"   /> 
+</fieldset>
+  
+<fieldset class="pure-group" style="border:black double 8px; display:none; border-radius: 15px; background-color:white;">
+<label for="IP">IP:</label><br>
+     <input  required id="IP"  class="pure-input-rounded" name="IP"   /> 
+</fieldset>
+     
+<div id="TotalL" style="border:black double 8px; border-radius: 15px; font-size:23px; background-color:white;"></div>
+
+<button onclick="hide()" style=" border:black double 8px; border-radius: 15px; padding-left:83%; background-color:white;" class="button-success pure-button button-xlarge">
+<i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+</div>
+  
+   
+
+     
+<div id="Thanks" style="border:black double 8px; border-radius: 15px;  background-color:white; display:none" class="thankyou_message">
+<h2>Thank you for ordering we will serve you soon.</h2>
+</div>
+  <script src="https://www.spiritspotcafe.com/Scripts/store.everything.min.js"></script>
+</form>
+   
+     <div id="result" style="border:black double 8px; display:none; border-radius: 15px; background-color:white;" > </div>
+<script data-cfasync="false" src="https://www.spiritspotcafe.com/Scripts/form-submission-handler.js"></script>
+
+<script src="https://www.spiritspotcafe.com/Scripts/Total.js"></script>
+ </body>
+    
+<script type="application/javascript" src="https://www.spiritspotcafe.com/Scripts/IPBLOCK.js"></script>
+<script type="application/javascript" src="https://www.spiritspotcafe.com/Scripts/local-storage.js"></script>
+
+          
+  
+<script src="https://www.spiritspotcafe.com/Scripts/Option.js"></script>
+<script src="https://www.spiritspotcafe.com/Scripts/VersionM.js"> </script>
+<script src="https://www.spiritspotcafe.com/Scripts/VersionN.js"> </script>
+<script src="https://www.spiritspotcafe.com/Scripts/Total.js"></script>
+     <script src="https://www.spiritspotcafe.com/Scripts/Save.js"> </script>
+<script src="https://www.spiritspotcafe.com/Scripts/Reload.js"></script>
+     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+     <script src="https://www.spiritspotcafe.com/Scripts/hide.js"> </script>
+</html>
