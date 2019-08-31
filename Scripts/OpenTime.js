@@ -5,8 +5,8 @@ var hours = myDate.getHours();
 var days = myDate.getDay() 
 var minutes = myDate.getMinutes()
 if (days == 0 || days == 6){
-document.getElementById("NotTime").style.display = "none"
-SaveO.style.display= "none"
+document.getElementById("NotTime").style.display = "block"
+SaveO.style.display= "block"
 } else {
 if ( hours > 6) {
   if (hours < 15){
