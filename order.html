@@ -1,16 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-	fieldset {
- border: 10px solid transparent;
-  padding: 15px;
-  border-image: url(https://cdn.pixabay.com/photo/2012/04/11/15/58/border-28660_960_720.png) 30 round;
-}
-</style>
 <link type="text/css" rel="stylesheet" href="https://www.spiritspotcafe.com/CSS/Navbar.css">
 <link type="text/css" rel="stylesheet" href="https://www.spiritspotcafe.com/CSS/Fonts.css">
- <link rel="stylesheet" href="css/layouts/marketing.css">
+     <link rel="stylesheet" href="css/layouts/marketing.css">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="contact form example">
@@ -18,67 +11,9 @@
 <meta http-equiv="Expires" content="-1">
 <title>Order Up!</title>
 <link rel="icon" href="https://www.spiritspotcafe.com/Images/PageIcon.ico">
-     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-<script type="text/javascript">
-	var sp = null;
-	function doData(json) {
-			spData = json.feed.entry;
-	}
-	
-	function drawCell(tr, val) {
-			var td = $("<td/>");
-			tr.append(td);
-			td.append(val);
-			return td;
-	}
-	function drawRow(table, rowData) {
-	  if (rowData == null) return null;
-	  if (rowData.length == 0) return null;
-	  var tr = $("<tr/>");
-	  table.append(tr);
-	  for(var c=0; c<rowData.length; c++) {
-		  drawCell(tr, rowData[c]);
-	  }
-	  return tr;
-	}
-	
-	function drawTable(parent) {
-	  var table = $("<table/>");
-	  parent.append(table);
-	  //console.log(table);
-	  return table;
-	}
-	
-	function readData(parent) {
-			var data = spData;
-			var table = drawTable(parent);
-			var rowData = [];
-			
-			for(var r=0; r<data.length; r++) {
-					var cell = data[r]["gs$cell"];
-					var val = cell["$t"];
-					if (cell.col == 1) {
-							drawRow(table, rowData);
-							rowData = [];
-					}
-					rowData.push(val);
-			}
-			drawRow(table, rowData);
-	}
-	
-	$(document).ready(function(){
-			readData($("#data"));
-	});
-	
-	
-	</script>
-
-<script src="https://spreadsheets.google.com/feeds/cells/1Kw5zOykQSqxmKmMejRHC8fShLeCLsHjzXt6AnFJTHoc/1/public/values?alt=json-in-script&callback=doData"></script>
-
 </head>
-   
-<header style="padding-bottom:80px;">
+     
+<header style="padding-bottom:90px;">
 <div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
         <a class="pure-menu-heading" href="index.html">Spirit Spot Cafe</a>
@@ -88,21 +23,21 @@
                 
           <li class="pure-menu-item"><a href="contact.html" class="pure-menu-link">Contact</a></li>
             <li class="pure-menu-item"><a href="menu.html" class="pure-menu-link">Menu</a></li>
-           
+            <li class="pure-menu-item"><a href="order.html" class="pure-menu-link">Order</a></li>
         </ul>
     </div>
 </div>
 </header>
  
-<body onload="OpenTime()" style="margin:0; font-size: 15px; padding-top: 20px;" background="https://xplosivex.github.io/SpiritSpotCafe/Images/Background.jpg">
+<body onload="OpenTime()" style="margin:0; font-size: 15px; padding-top: 40px;" background="https://xplosivex.github.io/SpiritSpotCafe/Images/Background.jpg">
   <div id="OpenClose" style="border:black double 8px;  border-radius: 15px; background-color:white;"><p> Orders Are Currently Not Being Accepted</p>   </div>
     
 <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
 <!-- START HERE -->
      <table style="margin:0; width:100%;" id="SaveO" ><tr><th>
- <button style="border:black double 8px;  border-radius: 15px; background-color:white; width:100%;" onclick="Save(); Aval();"> Save Order</button>  
+ <button style="border:black double 8px;  border-radius: 15px; background-color:white; width:100%;" onclick="Save()"> Save Order</button>  
  </th><th>
-<button style="border:black double 8px;  border-radius: 15px; background-color:white; width:100%;" onclick="Restore(); Aval();"> Restore Order </button>  
+<button style="border:black double 8px;  border-radius: 15px; background-color:white; width:100%;" onclick="Restore()"> Restore Order </button>  
 </th></tr></table> 
 
 <form id="NotTime"  class="gform pure-form pure-form-stacked" method="POST" action="https://script.google.com/macros/s/AKfycbw9mN1c_CT51vCimuvCqUCBBbu1Xq9m3p_qAVukov-B0gmn9t8/exec" style="display:none;">
@@ -119,29 +54,28 @@
 <label for="Type">Type Of Drink:</label><br>   
 <select id="Type" name="Type" onchange="change()">
      <option value="None">None</option>
-     <option id="T1" value="Smoothie">Smoothie</option>
-     <option id="T2" value="Hot Chocolate">Hot Chocolate</option>
-     <option id="T3" value="Hot Caramel">Hot Caramel</option>
-     <option id="T4" value="Hot Vanilla">Hot Vanilla</option>
-     <option id="T5" value="Iced Vanilla">Iced Vanilla</option>
-     <option id="T6" value="Iced Caramel">Iced Caramel</option>
+     <option value="Smoothie">Smoothie</option>
+     <option value="Hot Chocolate">Hot Chocolate</option>
+     <option value="Hot Caramel">Hot Caramel</option>
+     <option value="Hot Vanilla">Hot Vanilla</option>
+     <option value="Iced Vanilla">Iced Vanilla</option>
+     <option value="Iced Caramel">Iced Caramel</option>
      <option value="Special Request">Special Request</option>
 </select> 
 </fieldset>
      
-<fieldset id="hiddenDiv3"  style=" border:black double 8px; display:none; border-radius: 15px; width:100%; background-color:white;">
+<fieldset id="hiddenDiv3"  style=" border:black double 8px; display:none; border-radius: 15px; width:95%; background-color:white;">
 <label for="Toppings" >Type Of Smoothie:</label><br>
-<select id="ToppingsJ"   >    
-	<option  name="Toppings" value="No Type Of Smoothie Picked">Pick A Smoothie</option>
-     <option id="Top1" name="Toppings" value="Strawberry">Strawberry</option>
-     <option id="Top2" name="Toppings" value="Strawberry Banana">Strawberry Banana</option>
-     <option id="Top3" name="Toppings" value="Mango">Mango</option>
-     <option id="Top4" name="Toppings"  value="Naked">Naked</option>
+<select id="ToppingsJ"   >           
+     <option  name="Toppings" value="Strawberry">Strawberry</option>
+     <option name="Toppings" value="Strawberry Banana">Strawberry Banana</option>
+     <option name="Toppings" value="Mango">Mango</option>
+     <option name="Toppings"  value="Naked">Naked</option>
 </select> 
 </fieldset>   
                   
                   
-<fieldset id="hiddenDiv"  style=" border:black double 8px; display:none; border-radius: 15px; width:100%; background-color:white;">    
+<fieldset id="hiddenDiv"  style=" border:black double 8px; display:none; border-radius: 15px; width:95%; background-color:white;">    
 <label for="Toppings">Toppings:</label>
 <table>
 <tr><th>
@@ -512,8 +446,8 @@
 
  
 <fieldset id="hiddenDiv4" class="pure-group" style="border:black double 8px; border-radius: 15px; background-color:white;">
-<label for="Pickup Time" >Pickup Time</label><br>
-     <input  class="pure-input-rounded" value="Now" id="Pickup" name="Pickup Time"   /> 
+<label for="Pickup Time">Pickup Time</label><br>
+     <input  class="pure-input-rounded" value="Now" name="Pickup Time"   /> 
 </fieldset>
      
 <fieldset class="pure-group" style=" border:black double 8px; border-radius: 15px; background-color:white;">
@@ -534,21 +468,19 @@
      
 <div id="TotalL" style="border:black double 8px; border-radius: 15px; font-size:23px; background-color:white;"></div>
 
-
+<button onclick="hide()" style=" border:black double 8px; border-radius: 15px; padding-left:83%; background-color:white;" class="button-success pure-button button-xlarge">
+<i class="fa fa-paper-plane"></i>&nbsp;Send</button>
 </div>
   
-<input type="button" onclick="hide()" style=" border:black double 8px; border-radius: 15px; width:100%; background-color:white;" class="button-success pure-button button-xlarge">
-
+   
 
      
 <div id="Thanks" style="border:black double 8px; border-radius: 15px;  background-color:white; display:none" class="thankyou_message">
 <h2>Thank you for ordering we will serve you soon.</h2>
 </div>
-	<form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
-  action="https://script.google.com/macros/s/AKfycbwMxYDrufp73bKdU8gMvxFDdHRuzcR4IKQUB33B7GqwyfyZS04/exec">
   <script src="https://www.spiritspotcafe.com/Scripts/store.everything.min.js"></script>
 </form>
-	<div style="display:none;" id="data"/>  </div>
+   
      <div id="result" style="border:black double 8px; display:none; border-radius: 15px; background-color:white;" > </div>
 <script data-cfasync="false" src="https://www.spiritspotcafe.com/Scripts/form-submission-handler.js"></script>
 
@@ -561,13 +493,11 @@
           
   
 <script src="https://www.spiritspotcafe.com/Scripts/Option.js"></script>
-
+<script src="https://www.spiritspotcafe.com/Scripts/VersionM.js"> </script>
+<script src="https://www.spiritspotcafe.com/Scripts/VersionN.js"> </script>
 <script src="https://www.spiritspotcafe.com/Scripts/Total.js"></script>
      <script src="https://www.spiritspotcafe.com/Scripts/Save.js"> </script>
-     <script src="https://www.spiritspotcafe.com/Scripts/VersionM.js"> </script>
-<script src="https://www.spiritspotcafe.com/Scripts/VersionN.js"> </script>
 <script src="https://www.spiritspotcafe.com/Scripts/Reload.js"></script>
      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
      <script src="https://www.spiritspotcafe.com/Scripts/hide.js"> </script>
-<script src="https://www.spiritspotcafe.com/Scripts/Available.js"></script>
 </html>
