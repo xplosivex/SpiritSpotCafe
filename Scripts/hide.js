@@ -1,5 +1,4 @@
    function hide(){
-SaveO.style.display='none';
-OpenClose.style.display='none';
-
+document.getElementById("SAVED").style.display = "none"
+document.getElementById("SAVEF").style.display = "none"
      }
