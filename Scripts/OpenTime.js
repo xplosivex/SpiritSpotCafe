@@ -14,7 +14,8 @@ document.getElementById("NotTime").style.display = "block"
 
 } else {
 document.getElementById("NotTime").style.display = "none"
-  SaveO.style.display= "none"
+ document.getElementById("SAVED").style.display = "none"
+  document.getElementById("SAVEF").style.display = "none"
 }
 }
 }
