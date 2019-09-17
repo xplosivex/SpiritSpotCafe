@@ -13,9 +13,9 @@ if ( hours > 6) {
 document.getElementById("NotTime").style.display = "block"
 
 } else {
-document.getElementById("NotTime").style.display = "block"
- document.getElementById("SAVED").style.display = "block"
-  document.getElementById("SAVEF").style.display = "block"
+document.getElementById("NotTime").style.display = "none"
+ document.getElementById("SAVED").style.display = "none"
+  document.getElementById("SAVEF").style.display = "none"
    document.getElementById("ipblock").style.display = "block"
     document.getElementById("IpBlock").style.display = "none"
 
