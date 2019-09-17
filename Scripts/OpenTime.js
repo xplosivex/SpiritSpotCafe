@@ -16,6 +16,7 @@ document.getElementById("NotTime").style.display = "block"
 document.getElementById("NotTime").style.display = "block"
  document.getElementById("SAVED").style.display = "block"
   document.getElementById("SAVEF").style.display = "block"
+   document.getElementById("ipblock").style.display = "block"
 }
 }
 }
